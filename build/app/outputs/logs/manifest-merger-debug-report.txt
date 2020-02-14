@@ -1,0 +1,357 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from [com.google.firebase:firebase-ml-vision-face-model:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b01d3828016e5f39ccab019f498581e0/jetified-firebase-ml-vision-face-model-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:shared_preferences] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences_web] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences_macos] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_macos/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b598f8141f2a8a45636197cf47cd2a34/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-ml-common:19.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3c51ce7e613ddbc921376f3dcc8791c2/jetified-firebase-ml-common-19.0.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/7a0dd9f5539c9c7ea2d27729d5b7c81c/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/508c70be8a09dc8c1b825f9cea8d66dd/play-services-flags-16.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1e5188dbc7c31226699cd2356d562a4c/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e95de001eacb679987613965b75f46ec/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d31b7ff504aa4d27e955f7700f77543a/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1110404faf7d1db40235d03f4ec427ec/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e5a47c2f12b9e84ae6462ff61186af27/jetified-play-services-stats-16.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/57d823cb7ad6683860f89d23d9ac1d31/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3928c9e18de68f0455db6720045d6a12/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/dac8914d97b030336f96d954b4b42ff1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72eeca231a6f51d31d9658d02b78b14c/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/2f3813273079c547c376c6ad462b747c/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3e2eda6d969091c4de619348e7d58aa9/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec7855f3a342e1e2a912d02d1222241a/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/a4ce88f96962d5d7726ad401da6b2d3e/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3f03d082c65241a27925f731cf809d7e/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/0b39bd927545f0ddeb135b2ac2723165/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/daa744010a8a0c958c9e4674544a7265/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/baff24eb7ae064dbf17cac3a27e7138f/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/96a3d9170b885d672a5f9571ea8628e4/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b3a686160278d1c547eef71d1e2f4d05/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d9e611382d4364f359cc87d1fd747d20/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/84dac5c328233c7e74c2ae1456fcc871/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/87cc6ddec4a05e5fe824acb1f54b0db9/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/988e3938dd12d44914c3951a628e01e2/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/aa4e02a41c794a844c8e8cde05fed7ea/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/47d446691e1df86e08ae06f7a845f83b/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1de4a0cab7843a9d4ba1a01ac5f620d3/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8e87c920c7078555e89d0454459af6df/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ce994e0e1be3a9c6ee30304c91e2fb71/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec964f12557f155adafdb7a74cf5b125/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/20fd394b4211070d171f8b0ed9094407/print-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:2:5-47
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:8:5-29:19
+MERGED from [com.google.firebase:firebase-ml-vision-face-model:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b01d3828016e5f39ccab019f498581e0/jetified-firebase-ml-vision-face-model-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-ml-vision-face-model:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b01d3828016e5f39ccab019f498581e0/jetified-firebase-ml-vision-face-model-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b598f8141f2a8a45636197cf47cd2a34/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b598f8141f2a8a45636197cf47cd2a34/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/7a0dd9f5539c9c7ea2d27729d5b7c81c/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/7a0dd9f5539c9c7ea2d27729d5b7c81c/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1e5188dbc7c31226699cd2356d562a4c/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1e5188dbc7c31226699cd2356d562a4c/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d31b7ff504aa4d27e955f7700f77543a/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d31b7ff504aa4d27e955f7700f77543a/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1110404faf7d1db40235d03f4ec427ec/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1110404faf7d1db40235d03f4ec427ec/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e5a47c2f12b9e84ae6462ff61186af27/jetified-play-services-stats-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e5a47c2f12b9e84ae6462ff61186af27/jetified-play-services-stats-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/47d446691e1df86e08ae06f7a845f83b/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/47d446691e1df86e08ae06f7a845f83b/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:10:9-48
+	android:icon
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:11:9-43
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:9:9-57
+activity#com.d2aj.smart_attendance_system.MainActivity
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:12:9-23:20
+	android:launchMode
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:14:13-43
+	android:hardwareAccelerated
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:17:13-47
+	android:windowSoftInputMode
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:18:13-55
+	android:configChanges
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:16:13-163
+	android:theme
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:15:13-47
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:20:17-68
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:21:17-76
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:21:27-74
+meta-data#flutterEmbedding
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:26:9-28:33
+	android:value
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:28:13-30
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:27:13-44
+uses-sdk
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-ml-vision-face-model:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b01d3828016e5f39ccab019f498581e0/jetified-firebase-ml-vision-face-model-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-vision-face-model:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b01d3828016e5f39ccab019f498581e0/jetified-firebase-ml-vision-face-model-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_web] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_web] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_macos] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_macos/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_macos] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_macos/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b598f8141f2a8a45636197cf47cd2a34/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b598f8141f2a8a45636197cf47cd2a34/jetified-play-services-vision-common-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-common:19.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3c51ce7e613ddbc921376f3dcc8791c2/jetified-firebase-ml-common-19.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-common:19.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3c51ce7e613ddbc921376f3dcc8791c2/jetified-firebase-ml-common-19.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/7a0dd9f5539c9c7ea2d27729d5b7c81c/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/7a0dd9f5539c9c7ea2d27729d5b7c81c/jetified-play-services-clearcut-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/508c70be8a09dc8c1b825f9cea8d66dd/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/508c70be8a09dc8c1b825f9cea8d66dd/play-services-flags-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1e5188dbc7c31226699cd2356d562a4c/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1e5188dbc7c31226699cd2356d562a4c/jetified-play-services-phenotype-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e95de001eacb679987613965b75f46ec/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e95de001eacb679987613965b75f46ec/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d31b7ff504aa4d27e955f7700f77543a/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d31b7ff504aa4d27e955f7700f77543a/jetified-firebase-iid-interop-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1110404faf7d1db40235d03f4ec427ec/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1110404faf7d1db40235d03f4ec427ec/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e5a47c2f12b9e84ae6462ff61186af27/jetified-play-services-stats-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/e5a47c2f12b9e84ae6462ff61186af27/jetified-play-services-stats-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/57d823cb7ad6683860f89d23d9ac1d31/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/57d823cb7ad6683860f89d23d9ac1d31/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3928c9e18de68f0455db6720045d6a12/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3928c9e18de68f0455db6720045d6a12/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/dac8914d97b030336f96d954b4b42ff1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/dac8914d97b030336f96d954b4b42ff1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72eeca231a6f51d31d9658d02b78b14c/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72eeca231a6f51d31d9658d02b78b14c/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/2f3813273079c547c376c6ad462b747c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/2f3813273079c547c376c6ad462b747c/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3e2eda6d969091c4de619348e7d58aa9/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3e2eda6d969091c4de619348e7d58aa9/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec7855f3a342e1e2a912d02d1222241a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec7855f3a342e1e2a912d02d1222241a/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/a4ce88f96962d5d7726ad401da6b2d3e/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/a4ce88f96962d5d7726ad401da6b2d3e/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3f03d082c65241a27925f731cf809d7e/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/3f03d082c65241a27925f731cf809d7e/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/0b39bd927545f0ddeb135b2ac2723165/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/0b39bd927545f0ddeb135b2ac2723165/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/daa744010a8a0c958c9e4674544a7265/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/daa744010a8a0c958c9e4674544a7265/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/baff24eb7ae064dbf17cac3a27e7138f/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/baff24eb7ae064dbf17cac3a27e7138f/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/96a3d9170b885d672a5f9571ea8628e4/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/96a3d9170b885d672a5f9571ea8628e4/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b3a686160278d1c547eef71d1e2f4d05/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/b3a686160278d1c547eef71d1e2f4d05/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d9e611382d4364f359cc87d1fd747d20/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d9e611382d4364f359cc87d1fd747d20/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/84dac5c328233c7e74c2ae1456fcc871/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/84dac5c328233c7e74c2ae1456fcc871/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/87cc6ddec4a05e5fe824acb1f54b0db9/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/87cc6ddec4a05e5fe824acb1f54b0db9/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/988e3938dd12d44914c3951a628e01e2/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/988e3938dd12d44914c3951a628e01e2/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/aa4e02a41c794a844c8e8cde05fed7ea/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/aa4e02a41c794a844c8e8cde05fed7ea/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/47d446691e1df86e08ae06f7a845f83b/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/47d446691e1df86e08ae06f7a845f83b/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1de4a0cab7843a9d4ba1a01ac5f620d3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/1de4a0cab7843a9d4ba1a01ac5f620d3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8e87c920c7078555e89d0454459af6df/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8e87c920c7078555e89d0454459af6df/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ce994e0e1be3a9c6ee30304c91e2fb71/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ce994e0e1be3a9c6ee30304c91e2fb71/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec964f12557f155adafdb7a74cf5b125/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ec964f12557f155adafdb7a74cf5b125/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/20fd394b4211070d171f8b0ed9094407/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/20fd394b4211070d171f8b0ed9094407/print-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:6:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebasemlvision.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+	android:authorities
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+	android:exported
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+	android:resource
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+	android:name
+		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:42:25-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58

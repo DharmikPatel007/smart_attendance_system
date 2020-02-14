@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.d2aj.smart_attendance_system"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+16-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:5-79
+17-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:24:5-68
+18-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:26:22-79
+20    <!--
+21 io.flutter.app.FlutterApplication is an android.app.Application that
+22         calls FlutterMain.startInitialization(this); in its onCreate method.
+23         In most cases you can leave this as-is, but you if you want to provide
+24         additional functionality it is fine to subclass or reimplement
+25         FlutterApplication and put your custom class here.
+26    -->
+27    <application
+27-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:8:5-29:19
+28        android:name="io.flutter.app.FlutterApplication"
+28-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:9:9-57
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ae014e3e4328a7db12f93b515d98f6b5/core-1.0.2/AndroidManifest.xml:22:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:11:9-43
+32        android:label="smart_attendance_system" >
+32-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:10:9-48
+33        <activity
+33-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:12:9-23:20
+34            android:name="com.d2aj.smart_attendance_system.MainActivity"
+34-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:13:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:16:13-163
+36            android:hardwareAccelerated="true"
+36-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:17:13-47
+37            android:launchMode="singleTop"
+37-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:14:13-43
+38            android:theme="@style/LaunchTheme"
+38-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:15:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:18:13-55
+40            <intent-filter>
+40-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:19:13-22:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:20:17-68
+41-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:20:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:21:17-76
+43-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:21:27-74
+44            </intent-filter>
+45        </activity>
+46        <!--
+47             Don't delete the meta-data below.
+48             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+49        -->
+50        <meta-data
+50-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:26:9-28:33
+51            android:name="flutterEmbedding"
+51-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:27:13-44
+52            android:value="2" />
+52-->/home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/android/app/src/main/AndroidManifest.xml:28:13-30
+53
+54        <service
+54-->[:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+55            android:name="com.google.firebase.components.ComponentDiscoveryService"
+55-->[:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+56            android:exported="false" >
+56-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:31:13-37
+57            <meta-data
+57-->[:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+58                android:name="com.google.firebase.components:io.flutter.plugins.firebasemlvision.FlutterFirebaseAppRegistrar"
+58-->[:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[:firebase_ml_vision] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/firebase_ml_vision/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+60            <meta-data
+60-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+61                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+61-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+63        </service>
+64
+65        <provider
+65-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+66            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+66-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+67            android:authorities="com.d2aj.smart_attendance_system.flutter.image_provider"
+67-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+68            android:exported="false"
+68-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+69            android:grantUriPermissions="true" >
+69-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+70            <meta-data
+70-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+71                android:name="android.support.FILE_PROVIDER_PATHS"
+71-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+72                android:resource="@xml/flutter_image_picker_file_paths" />
+72-->[:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+73        </provider>
+74
+75        <receiver
+75-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+76            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+76-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+77            android:exported="true"
+77-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+78            android:permission="com.google.android.c2dm.permission.SEND" >
+78-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+79            <intent-filter>
+79-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:41:13-43:29
+80                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+80-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:42:17-81
+80-->[com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:42:25-78
+81            </intent-filter>
+82        </receiver>
+83
+84        <activity
+84-->[com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+85            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+85-->[com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+86            android:exported="false"
+86-->[com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+87-->[com.google.android.gms:play-services-base:16.0.1] /home/dharmik/.gradle/caches/transforms-2/files-2.1/50925068d85c03b7351dc0f68fd76539/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+88
+89        <provider
+89-->[com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+90            android:name="com.google.firebase.provider.FirebaseInitProvider"
+90-->[com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+91            android:authorities="com.d2aj.smart_attendance_system.firebaseinitprovider"
+91-->[com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+92            android:exported="false"
+92-->[com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+93            android:initOrder="100" />
+93-->[com.google.firebase:firebase-common:17.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/72a265fcc97d2387d3bbcdb24c005136/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+94
+95        <meta-data
+95-->[com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+96            android:name="com.google.android.gms.version"
+96-->[com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+97            android:value="@integer/google_play_services_version" />
+97-->[com.google.android.gms:play-services-basement:16.1.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/28ce74bfaf59093188f391b01db856e0/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+98    </application>
+99
+100</manifest>
