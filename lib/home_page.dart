@@ -9,8 +9,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({@required this.loginEmail});
-  final String loginEmail;
   static String id = 'HomePadeID';
   @override
   _HomePageState createState() => _HomePageState();
@@ -25,7 +23,7 @@ class _HomePageState extends State<HomePage> {
 
   _getImageAndDetectFaces() async {
     final imageFile = await ImagePicker.pickImage(source: ImageSource.camera);
-    if(imageFile != null){
+    if (imageFile != null) {
       setState(() {
         isLoading = true;
       });
@@ -82,40 +80,39 @@ class _HomePageState extends State<HomePage> {
           title: Text('Select Images'),
         ),
         drawer: Drawer(
-          child: ListView(
-            children:<Widget>[
-              UserAccountsDrawerHeader(
-                accountName: Text('Hemal Patel'),
-                accountEmail: Text('hemal.patel@socet.edu'),
-                currentAccountPicture: CircleAvatar(
-                  child: Text('H'),
-                  backgroundColor: Colors.white,
-                ),
+          child: ListView(children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text('Hemal Patel'),
+              accountEmail: Text('hemal.patel@socet.edu'),
+              currentAccountPicture: CircleAvatar(
+                child: Text('H'),
+                backgroundColor: Colors.white,
               ),
-              ListTile(
-                title: Text('About US'),
-                trailing: Icon(CupertinoIcons.group_solid),
-              ),
-              Divider(),
-              ListTile(
-                title: Text('Sign Out'),
-                trailing: Icon(CupertinoIcons.reply_thick_solid),
-                onTap: () async {
-                  setState(() {
-                    progressIndicator = true;
-                  });
-                  SharedPreferences prefs = await SharedPreferences.getInstance();
-                  prefs.setBool('is_logged_in',false);
-                  await Future.delayed(Duration(seconds: 2),(){
-                    Navigator.of(context).pushNamedAndRemoveUntil(LoginPage.id,(Route<dynamic> route)=>false);
-                  });
-                  setState(() {
-                    progressIndicator = false;
-                  });
-                },
-              )
-            ]
-          ),
+            ),
+            ListTile(
+              title: Text('About US'),
+              trailing: Icon(CupertinoIcons.group_solid),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Sign Out'),
+              trailing: Icon(CupertinoIcons.reply_thick_solid),
+              onTap: () async {
+                setState(() {
+                  progressIndicator = true;
+                });
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                prefs.setBool('is_logged_in', false);
+                await Future.delayed(Duration(seconds: 2), () {
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                      LoginPage.id, (Route<dynamic> route) => false);
+                });
+                setState(() {
+                  progressIndicator = false;
+                });
+              },
+            )
+          ]),
         ),
         body: isLoading && _imageFile != null
             ? Center(child: CircularProgressIndicator())

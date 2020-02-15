@@ -13,7 +13,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   final _formKey = GlobalKey<FormState>();
   bool isLoading = false;
   TextEditingController email = TextEditingController();
@@ -21,59 +20,66 @@ class _LoginPageState extends State<LoginPage> {
 
   String url = 'http://jatinparate.pythonanywhere.com/api/login/';
 
-  void validateUser() async{
+  void validateUser() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    try{
+    try {
       var response = await http.post(url,
-          body: {
-            'email' : '${email.text}',
-            'password' : '${password.text}'
-          });
+          body: {'email': '${email.text}', 'password': '${password.text}'});
       var data = jsonDecode(response.body);
       if (data['is_logged_in']) {
-        await prefs.setBool('is_logged_in',true);
-      //  print('Logged In Successfully');
+        await prefs.setBool('is_logged_in', true);
+        //  print('Logged In Successfully');
         setState(() {
           isLoading = false;
         });
-      //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
-        Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>HomePage(loginEmail: email.text,)));
-      }else{
-        await prefs.setBool('is_logged_in',false);
-       // print('Not Logged In');
+        //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+      } else {
+        await prefs.setBool('is_logged_in', false);
+        // print('Not Logged In');
         showAlertDialog(this.context);
       }
-    }catch(e){
+    } catch (e) {
       print(e);
     }
   }
-  showAlertDialog(context){
+
+  showAlertDialog(context) {
     setState(() {
       isLoading = false;
     });
     return showDialog(
         context: context,
-      builder: (context){
-        return CupertinoAlertDialog(
-          title: Row(
-            children: <Widget>[
-              SizedBox(width: 40,),
-              Icon(CupertinoIcons.info),
-              SizedBox(width: 5,height: 50,),
-              Text('Information'),
+        builder: (context) {
+          return CupertinoAlertDialog(
+            title: Row(
+              children: <Widget>[
+                SizedBox(
+                  width: 40,
+                ),
+                Icon(CupertinoIcons.info),
+                SizedBox(
+                  width: 5,
+                  height: 50,
+                ),
+                Text('Information'),
+              ],
+            ),
+            content: Text('Username or Password is Invalid.'),
+            actions: <Widget>[
+              CupertinoButton(
+                child: Text(
+                  'Retry',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: Navigator.of(context).pop,
+              )
             ],
-          ),
-          content: Text('Username or Password is Invalid.'),
-          actions: <Widget>[
-            CupertinoButton(
-              child: Text('Retry',style: TextStyle(color: Colors.white),),
-              onPressed: Navigator.of(context).pop,
-            )
-          ],
-        );
-      }
-    );
+          );
+        });
   }
+
   @override
   Widget build(BuildContext context) {
     return ModalProgressHUD(
@@ -113,10 +119,10 @@ class _LoginPageState extends State<LoginPage> {
                               labelText: 'Enter your email',
                             ),
                             keyboardType: TextInputType.emailAddress,
-                            validator: (value){
-                              if(value.isEmpty){
+                            validator: (value) {
+                              if (value.isEmpty) {
                                 return 'Please enter valid email address.';
-                              }else{
+                              } else {
                                 return null;
                               }
                             },
@@ -128,10 +134,10 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             keyboardType: TextInputType.text,
                             obscureText: true,
-                            validator: (value){
-                              if(value.isEmpty){
+                            validator: (value) {
+                              if (value.isEmpty) {
                                 return 'Password is required.';
-                              }else{
+                              } else {
                                 return null;
                               }
                             },
@@ -140,8 +146,8 @@ class _LoginPageState extends State<LoginPage> {
                             child: Text('Login'),
                             color: Colors.teal,
                             splashColor: Colors.greenAccent,
-                            onPressed: (){
-                              if(_formKey.currentState.validate()){
+                            onPressed: () {
+                              if (_formKey.currentState.validate()) {
                                 setState(() {
                                   isLoading = true;
                                 });
