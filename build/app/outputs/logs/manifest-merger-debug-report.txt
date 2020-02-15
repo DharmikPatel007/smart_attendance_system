@@ -12,6 +12,7 @@ MERGED from [:shared_preferences_web] /home/dharmik/Desktop/MyWorkSpace/AndroidS
 MERGED from [:shared_preferences_macos] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/shared_preferences_macos/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-vision-image-label:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/ccfd745acef540a74718cff34e496613/play-services-vision-image-label-17.0.2/AndroidManifest.xml:2:1-9:12
@@ -163,6 +164,8 @@ MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProje
 MERGED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-ml-vision:20.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/d79e056e4fb4060060242f5c7c3d4f17/jetified-firebase-ml-vision-20.0.0/AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-vision:17.0.2] /home/dharmik/.gradle/caches/transforms-2/files-2.1/fa9ffffba13adb05d970edfb2adcc9fd/play-services-vision-17.0.2/AndroidManifest.xml:5:5-44
@@ -300,9 +303,15 @@ ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjec
 	android:name
 		ADDED from [:image_picker] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:5-79
+ADDED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:22:22-76
+		ADDED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from [:connectivity] /home/dharmik/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-iid:18.0.0] /home/dharmik/.gradle/caches/transforms-2/files-2.1/8b6e1ed11ea4c902ca809892417d2732/jetified-firebase-iid-18.0.0/AndroidManifest.xml:24:5-68
 	android:name

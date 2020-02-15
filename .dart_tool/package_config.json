@@ -38,6 +38,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "connectivity",
+      "rootUri": "file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.4.6+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "convert",
       "rootUri": "file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
       "packageUri": "lib/",
@@ -242,7 +248,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-02-09T08:27:30.484180Z",
+  "generated": "2020-02-15T13:20:34.916753Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }

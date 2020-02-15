@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smart_attendance_system/home_page.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:connectivity/connectivity.dart';
 
 class LoginPage extends StatefulWidget {
   static String id = 'LoginPageID';
@@ -13,12 +15,39 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  String _connectionStatus = 'none';
+  StreamSubscription<ConnectivityResult> subscription;
+  Connectivity connectivity;
+
   final _formKey = GlobalKey<FormState>();
   bool isLoading = false;
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
 
   String url = 'http://jatinparate.pythonanywhere.com/api/login/';
+
+  @override
+  void initState() {
+    connectivity = Connectivity();
+    subscription = connectivity.onConnectivityChanged.listen((result) {
+      if (result == ConnectivityResult.mobile ||
+          result == ConnectivityResult.wifi) {
+        _connectionStatus = result.toString();
+        print(_connectionStatus);
+      } else {
+        _connectionStatus = result.toString();
+        showAlertDialog(
+            context: this.context, text: 'No Internet Connection !');
+      }
+    });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    subscription.cancel();
+    super.dispose();
+  }
 
   void validateUser() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -33,23 +62,25 @@ class _LoginPageState extends State<LoginPage> {
           isLoading = false;
         });
         //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
-        Navigator.of(context).pushReplacement(
+        Navigator.of(this.context).pushReplacement(
             MaterialPageRoute(builder: (BuildContext context) => HomePage()));
       } else {
         await prefs.setBool('is_logged_in', false);
         // print('Not Logged In');
-        showAlertDialog(this.context);
+        showAlertDialog(
+            context: this.context, text: 'Username or Password is Invalid.');
       }
     } catch (e) {
       print(e);
     }
   }
 
-  showAlertDialog(context) {
+  showAlertDialog({BuildContext context, @required String text}) {
     setState(() {
       isLoading = false;
     });
     return showDialog(
+        barrierDismissible: false,
         context: context,
         builder: (context) {
           return CupertinoAlertDialog(
@@ -66,14 +97,20 @@ class _LoginPageState extends State<LoginPage> {
                 Text('Information'),
               ],
             ),
-            content: Text('Username or Password is Invalid.'),
+            content: Text(text),
             actions: <Widget>[
               CupertinoButton(
                 child: Text(
                   'Retry',
                   style: TextStyle(color: Colors.white),
                 ),
-                onPressed: Navigator.of(context).pop,
+                onPressed: () {
+                  if (_connectionStatus == ConnectivityResult.wifi.toString() ||
+                      _connectionStatus ==
+                          ConnectivityResult.mobile.toString()) {
+                    Navigator.of(context).pop();
+                  }
+                },
               )
             ],
           );
