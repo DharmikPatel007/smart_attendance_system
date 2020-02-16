@@ -61,8 +61,8 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
-  cropImages(img, rects) {
-    var image = Images.decodeImage(img);
+  cropImages(File img, rects) {
+    var image = Images.decodeImage(img.readAsBytesSync());
     for (int i = 0; i < rects.length; i++) {
       var result = Images.copyCrop(
           image,
@@ -70,8 +70,12 @@ class _HomePageState extends State<HomePage> {
           rects[i].topLeft.dy.toInt(),
           rects[i].width.toInt(),
           rects[i].height.toInt());
-      File('/mnt/sdcard/.faces/face$i.jpg')
-          .writeAsBytesSync(Images.encodeJpg(result));
+      try {
+        File('/mnt/sdcard/.faces/face$i.jpg')
+            .writeAsBytesSync(Images.encodeJpg(result));
+      } catch (e) {
+        print(e);
+      }
     }
   }
 
@@ -154,8 +158,10 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      MaterialButton(
-                        onPressed: cropImages(_imageFile, FacePainter.rects),
+                      CupertinoButton(
+                        onPressed: () {
+                          cropImages(_imageFile, FacePainter.rects);
+                        },
                         child: Text('Crop Images'),
                       )
                     ],
