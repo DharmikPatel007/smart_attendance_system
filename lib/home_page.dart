@@ -9,12 +9,14 @@ import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class HomePage extends StatefulWidget {
-  static String id = 'HomePadeID';
+  static String id = 'HomePageID';
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+  String _loginName = 'name';
+  String _loginEmail = 'email';
   bool progressIndicator = false;
   File _imageFile;
   List<Face> _faces;
@@ -30,6 +32,7 @@ class _HomePageState extends State<HomePage> {
       final image = FirebaseVisionImage.fromFile(imageFile);
       final faceDetector = FirebaseVision.instance.faceDetector();
       List<Face> faces = await faceDetector.processImage(image);
+
       if (mounted) {
         setState(() {
           _imageFile = imageFile;
@@ -64,6 +67,10 @@ class _HomePageState extends State<HomePage> {
         Navigator.of(context).pushNamedAndRemoveUntil(
             LoginPage.id, (Route<dynamic> route) => false);
       }
+      setState(() {
+        _loginName = prefs.getString('login_name');
+        _loginEmail = prefs.getString('login_email');
+      });
     } catch (e) {
       Navigator.of(context).pushNamedAndRemoveUntil(
           LoginPage.id, (Route<dynamic> route) => false);
@@ -82,10 +89,10 @@ class _HomePageState extends State<HomePage> {
         drawer: Drawer(
           child: ListView(children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text('Hemal Patel'),
-              accountEmail: Text('hemal.patel@socet.edu'),
+              accountName: Text(_loginName),
+              accountEmail: Text(_loginEmail),
               currentAccountPicture: CircleAvatar(
-                child: Text('H'),
+                child: Text(_loginName.substring(0, 1)),
                 backgroundColor: Colors.white,
               ),
             ),

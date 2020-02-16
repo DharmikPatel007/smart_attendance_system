@@ -50,28 +50,35 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void validateUser() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    try {
-      var response = await http.post(url,
-          body: {'email': '${email.text}', 'password': '${password.text}'});
-      var data = jsonDecode(response.body);
-      if (data['is_logged_in']) {
-        await prefs.setBool('is_logged_in', true);
-        //  print('Logged In Successfully');
-        setState(() {
-          isLoading = false;
-        });
-        //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
-        Navigator.of(this.context).pushReplacement(
-            MaterialPageRoute(builder: (BuildContext context) => HomePage()));
-      } else {
-        await prefs.setBool('is_logged_in', false);
-        // print('Not Logged In');
-        showAlertDialog(
-            context: this.context, text: 'Username or Password is Invalid.');
+    if (_connectionStatus == ConnectivityResult.mobile.toString() ||
+        _connectionStatus == ConnectivityResult.wifi.toString()) {
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      try {
+        var response = await http.post(url,
+            body: {'email': '${email.text}', 'password': '${password.text}'});
+        var data = jsonDecode(response.body);
+        if (data['is_logged_in']) {
+          await prefs.setBool('is_logged_in', true);
+          await prefs.setString('login_name', data['name']);
+          await prefs.setString('login_email', data['email']);
+          //  print('Logged In Successfully');
+          setState(() {
+            isLoading = false;
+          });
+          //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
+          Navigator.of(this.context).pushReplacement(
+              MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+        } else {
+          await prefs.setBool('is_logged_in', false);
+          // print('Not Logged In');
+          showAlertDialog(
+              context: this.context, text: 'Username or Password is Invalid.');
+        }
+      } catch (e) {
+        print(e);
       }
-    } catch (e) {
-      print(e);
+    } else {
+      showAlertDialog(context: context, text: 'No Internet Connection !');
     }
   }
 
@@ -137,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: FlutterLogo(
                     size: 20.0,
                   ),
@@ -179,7 +186,7 @@ class _LoginPageState extends State<LoginPage> {
                               }
                             },
                           ),
-                          MaterialButton(
+                          MaterialButton(                     
                             child: Text('Login'),
                             color: Colors.teal,
                             splashColor: Colors.greenAccent,
