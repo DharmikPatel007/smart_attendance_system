@@ -7,6 +7,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smart_attendance_system/login_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:image/image.dart' as Images;
+import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
   static String id = 'HomePageID';
@@ -57,6 +59,20 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     _checkLogin();
     super.initState();
+  }
+
+  cropImages(img, rects) {
+    var image = Images.decodeImage(img);
+    for (int i = 0; i < rects.length; i++) {
+      var result = Images.copyCrop(
+          image,
+          rects[i].topLeft.dx.toInt(),
+          rects[i].topLeft.dy.toInt(),
+          rects[i].width.toInt(),
+          rects[i].height.toInt());
+      File('/mnt/sdcard/.faces/face$i.jpg')
+          .writeAsBytesSync(Images.encodeJpg(result));
+    }
   }
 
   _checkLogin() async {
@@ -121,20 +137,28 @@ class _HomePageState extends State<HomePage> {
             )
           ]),
         ),
-        body: isLoading && _imageFile != null
+        body: isLoading
             ? Center(child: CircularProgressIndicator())
             : (_imageFile == null)
                 ? Center(child: Text('No image selected'))
-                : Center(
-                    child: FittedBox(
-                      child: SizedBox(
-                        width: _image.width.toDouble(),
-                        height: _image.height.toDouble(),
-                        child: CustomPaint(
-                          painter: FacePainter(_image, _faces),
+                : Column(
+                    children: <Widget>[
+                      Center(
+                        child: FittedBox(
+                          child: SizedBox(
+                            width: _image.width.toDouble(),
+                            height: _image.height.toDouble(),
+                            child: CustomPaint(
+                              painter: FacePainter(_image, _faces),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                      MaterialButton(
+                        onPressed: cropImages(_imageFile, FacePainter.rects),
+                        child: Text('Crop Images'),
+                      )
+                    ],
                   ),
         floatingActionButton: FloatingActionButton(
           onPressed: _getImageAndDetectFaces,
@@ -149,7 +173,7 @@ class _HomePageState extends State<HomePage> {
 class FacePainter extends CustomPainter {
   final ui.Image image;
   final List<Face> faces;
-  final List<Rect> rects = [];
+  static final List<Rect> rects = [];
 
   FacePainter(this.image, this.faces) {
     for (var i = 0; i < faces.length; i++) {
