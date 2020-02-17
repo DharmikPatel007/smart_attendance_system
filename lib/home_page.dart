@@ -8,6 +8,7 @@ import 'package:smart_attendance_system/login_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:image/image.dart' as Images;
+import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
@@ -59,24 +60,6 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     _checkLogin();
     super.initState();
-  }
-
-  cropImages(File img, rects) {
-    var image = Images.decodeImage(img.readAsBytesSync());
-    for (int i = 0; i < rects.length; i++) {
-      var result = Images.copyCrop(
-          image,
-          rects[i].topLeft.dx.toInt(),
-          rects[i].topLeft.dy.toInt(),
-          rects[i].width.toInt(),
-          rects[i].height.toInt());
-      try {
-        File('/mnt/sdcard/.faces/face$i.jpg')
-            .writeAsBytesSync(Images.encodeJpg(result));
-      } catch (e) {
-        print(e);
-      }
-    }
   }
 
   _checkLogin() async {
@@ -158,9 +141,9 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      CupertinoButton(
+                      RaisedButton(
                         onPressed: () {
-                          cropImages(_imageFile, FacePainter.rects);
+                          FacePainter.cropImages(_imageFile);
                         },
                         child: Text('Crop Images'),
                       )
@@ -185,6 +168,25 @@ class FacePainter extends CustomPainter {
     for (var i = 0; i < faces.length; i++) {
       rects.add(faces[i].boundingBox);
     }
+  }
+
+  static cropImages(File img) async {
+    Future<Directory> path = getApplicationDocumentsDirectory();
+    Images.Image image = Images.decodeImage(img.readAsBytesSync());
+    for (int i = 0; i < rects.length; i++) {
+      Images.Image result = Images.copyCrop(
+          image,
+          rects[i].topLeft.dx.toInt(),
+          rects[i].topLeft.dy.toInt(),
+          rects[i].width.toInt(),
+          rects[i].height.toInt());
+      try {
+        File('$path/face$i.jpg').writeAsBytesSync(Images.encodeJpg(result));
+      } catch (e) {
+        print(e);
+      }
+    }
+    print('Cropping Successfull.');
   }
 
   @override
