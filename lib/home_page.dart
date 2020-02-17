@@ -9,7 +9,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:image/image.dart' as Images;
 import 'package:path_provider/path_provider.dart';
-import 'package:flutter/services.dart';
 
 class HomePage extends StatefulWidget {
   static String id = 'HomePageID';
@@ -143,9 +142,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                       RaisedButton(
                         onPressed: () {
-                          FacePainter.cropImages(_imageFile);
+                          FacePainter.cropFaces(_imageFile);
                         },
-                        child: Text('Crop Images'),
+                        child: Text('Crop Faces'),
                       )
                     ],
                   ),
@@ -170,8 +169,8 @@ class FacePainter extends CustomPainter {
     }
   }
 
-  static cropImages(File img) async {
-    Future<Directory> path = getApplicationDocumentsDirectory();
+  static cropFaces(File img) {
+  //  Future<Directory> path = getApplicationDocumentsDirectory();
     Images.Image image = Images.decodeImage(img.readAsBytesSync());
     for (int i = 0; i < rects.length; i++) {
       Images.Image result = Images.copyCrop(
@@ -181,7 +180,7 @@ class FacePainter extends CustomPainter {
           rects[i].width.toInt(),
           rects[i].height.toInt());
       try {
-        File('$path/face$i.jpg').writeAsBytesSync(Images.encodeJpg(result));
+        File('/.faces/face$i.jpg').writeAsBytesSync(Images.encodeJpg(result));
       } catch (e) {
         print(e);
       }
