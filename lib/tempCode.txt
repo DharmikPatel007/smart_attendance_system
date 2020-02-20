@@ -1,0 +1,48 @@
+// static cropFaces(File img) {
+  //   for(int i=0;i < rects.length ;i++){
+  //     print('top left : ${rects[i].topLeft}');
+  //     print('top right : ${rects[i].topRight}');
+  //     print('width : ${rects[i].width}');
+  //     print('height : ${rects[i].height}');
+  //   }
+  // //  Future<Directory> path = getApplicationDocumentsDirectory();
+  //   Images.Image image = Images.decodeImage(img.readAsBytesSync());
+  //   for (int i = 0; i < rects.length; i++) {
+  //     Images.Image result = Images.copyCrop(
+  //         image,
+  //         rects[i].topLeft.dy.toInt(),
+  //         rects[i].bottomRight.dx.toInt(),
+  //         rects[i].width.toInt(),
+  //         rects[i].height.toInt());
+  //     try {
+  //       File('/.faces/face$i.jpg')..writeAsBytesSync(Images.encodeJpg(result));
+  //     } catch (e) {
+  //       print(e);
+  //     }
+  //   }
+  //   print('Cropping Successfull.');
+  // }
+
+
+
+
+
+
+//    final img = Images.decodeImage(imgFile.readAsBytesSync());
+//
+//    for (int i = 0; i < rects.length; i++) {
+//      Images.Image result = Images.copyCrop(
+//          img,
+//          rects[i].left.toInt(),
+//          rects[i].right.toInt(),
+//          rects[i].width.toInt(),
+//          rects[i].height.toInt());
+//
+//      try {
+//        print('file created $i');
+//
+//        File('/.faces/face$i.jpg')..writeAsBytesSync(Images.encodeJpg(result));
+//      } catch (e) {
+//        print(e);
+//      }
+//    }

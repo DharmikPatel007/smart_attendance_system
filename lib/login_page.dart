@@ -1,20 +1,21 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:smart_attendance_system/home_page.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:connectivity/connectivity.dart';
+import 'auth.dart';
 
 class LoginPage extends StatefulWidget {
+  LoginPage({@required this.isLogin});
+  final VoidCallback isLogin;
+
   static String id = 'LoginPageID';
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+  Auth auth = Auth();
   String _connectionStatus = 'none';
   StreamSubscription<ConnectivityResult> subscription;
   Connectivity connectivity;
@@ -24,7 +25,6 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
 
-  String url = 'http://jatinparate.pythonanywhere.com/api/login/';
 
   @override
   void initState() {
@@ -47,39 +47,6 @@ class _LoginPageState extends State<LoginPage> {
   void dispose() {
     subscription.cancel();
     super.dispose();
-  }
-
-  void validateUser() async {
-    if (_connectionStatus == ConnectivityResult.mobile.toString() ||
-        _connectionStatus == ConnectivityResult.wifi.toString()) {
-      SharedPreferences prefs = await SharedPreferences.getInstance();
-      try {
-        var response = await http.post(url,
-            body: {'email': '${email.text}', 'password': '${password.text}'});
-        var data = jsonDecode(response.body);
-        if (data['is_logged_in']) {
-          await prefs.setBool('is_logged_in', true);
-          await prefs.setString('login_name', data['name']);
-          await prefs.setString('login_email', data['email']);
-          //  print('Logged In Successfully');
-          setState(() {
-            isLoading = false;
-          });
-          //  Navigator.of(context).pushNamedAndRemoveUntil(HomePage.id,(Route<dynamic> route)=>false);
-          Navigator.of(this.context).pushReplacement(
-              MaterialPageRoute(builder: (BuildContext context) => HomePage()));
-        } else {
-          await prefs.setBool('is_logged_in', false);
-          // print('Not Logged In');
-          showAlertDialog(
-              context: this.context, text: 'Username or Password is Invalid.');
-        }
-      } catch (e) {
-        print(e);
-      }
-    } else {
-      showAlertDialog(context: context, text: 'No Internet Connection !');
-    }
   }
 
   showAlertDialog({BuildContext context, @required String text}) {
@@ -192,10 +159,23 @@ class _LoginPageState extends State<LoginPage> {
                             splashColor: Colors.greenAccent,
                             onPressed: () {
                               if (_formKey.currentState.validate()) {
+                                auth.validateUser(email.text,password.text).then((onValue){
+                                  print('value is : $onValue');
+                                  if(onValue == 'true'){
+                                    widget.isLogin();
+                                  }else if(onValue == 'false'){
+                                    showAlertDialog(
+                                        context: this.context, text: 'Username or Password is Invalid.'
+                                    );
+                                  }else if(onValue == 'noConnection'){
+                                    showAlertDialog(
+                                      context: this.context,text: 'No Internet Connection !'
+                                    );
+                                  }
+                                });
                                 setState(() {
                                   isLoading = true;
                                 });
-                                validateUser();
                               }
                             },
                           )

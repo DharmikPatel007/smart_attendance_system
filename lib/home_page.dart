@@ -4,11 +4,11 @@ import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:smart_attendance_system/login_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-import 'package:image/image.dart' as Images;
-import 'package:path_provider/path_provider.dart';
+import 'package:smart_attendance_system/root_page.dart';
+import 'auth.dart';
+import 'face_painter.dart';
 
 class HomePage extends StatefulWidget {
   static String id = 'HomePageID';
@@ -17,6 +17,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Auth auth = Auth();
   String _loginName = 'name';
   String _loginEmail = 'email';
   bool progressIndicator = false;
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   ui.Image _image;
 
   _getImageAndDetectFaces() async {
-    final imageFile = await ImagePicker.pickImage(source: ImageSource.camera);
+    final imageFile = await ImagePicker.pickImage(source: ImageSource.gallery);
     if (imageFile != null) {
       setState(() {
         isLoading = true;
@@ -57,27 +58,13 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    _checkLogin();
     super.initState();
-  }
-
-  _checkLogin() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    print('prefs is : ${prefs.getBool('is_logged_in')}');
-    try {
-      if (!prefs.getBool('is_logged_in')) {
-        Navigator.of(context).pushNamedAndRemoveUntil(
-            LoginPage.id, (Route<dynamic> route) => false);
-      }
+    auth.getNameAndEmail().then((onValue){
       setState(() {
-        _loginName = prefs.getString('login_name');
-        _loginEmail = prefs.getString('login_email');
+        _loginName = onValue[0].toUpperCase();
+        _loginEmail = onValue[1];
       });
-    } catch (e) {
-      Navigator.of(context).pushNamedAndRemoveUntil(
-          LoginPage.id, (Route<dynamic> route) => false);
-      print(e);
-    }
+    });
   }
 
   @override
@@ -113,8 +100,7 @@ class _HomePageState extends State<HomePage> {
                 SharedPreferences prefs = await SharedPreferences.getInstance();
                 prefs.setBool('is_logged_in', false);
                 await Future.delayed(Duration(seconds: 2), () {
-                  Navigator.of(context).pushNamedAndRemoveUntil(
-                      LoginPage.id, (Route<dynamic> route) => false);
+                  Navigator.of(context).pushReplacementNamed(RootPage.id);
                 });
                 setState(() {
                   progressIndicator = false;
@@ -135,14 +121,14 @@ class _HomePageState extends State<HomePage> {
                             width: _image.width.toDouble(),
                             height: _image.height.toDouble(),
                             child: CustomPaint(
-                              painter: FacePainter(_image, _faces),
+                              painter: FacePainter(_image, _faces, _imageFile),
                             ),
                           ),
                         ),
                       ),
                       RaisedButton(
                         onPressed: () {
-                          FacePainter.cropFaces(_imageFile);
+                          // FacePainter.cropFaces(_imageFile);
                         },
                         child: Text('Crop Faces'),
                       )
@@ -155,54 +141,5 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-}
-
-class FacePainter extends CustomPainter {
-  final ui.Image image;
-  final List<Face> faces;
-  static final List<Rect> rects = [];
-
-  FacePainter(this.image, this.faces) {
-    for (var i = 0; i < faces.length; i++) {
-      rects.add(faces[i].boundingBox);
-    }
-  }
-
-  static cropFaces(File img) {
-  //  Future<Directory> path = getApplicationDocumentsDirectory();
-    Images.Image image = Images.decodeImage(img.readAsBytesSync());
-    for (int i = 0; i < rects.length; i++) {
-      Images.Image result = Images.copyCrop(
-          image,
-          rects[i].topLeft.dx.toInt(),
-          rects[i].topLeft.dy.toInt(),
-          rects[i].width.toInt(),
-          rects[i].height.toInt());
-      try {
-        File('/.faces/face$i.jpg').writeAsBytesSync(Images.encodeJpg(result));
-      } catch (e) {
-        print(e);
-      }
-    }
-    print('Cropping Successfull.');
-  }
-
-  @override
-  void paint(ui.Canvas canvas, ui.Size size) {
-    final Paint paint = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 15.0
-      ..color = Colors.yellow;
-
-    canvas.drawImage(image, Offset.zero, Paint());
-    for (var i = 0; i < faces.length; i++) {
-      canvas.drawRect(rects[i], paint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(FacePainter oldDelegate) {
-    return image != oldDelegate.image || faces != oldDelegate.faces;
   }
 }

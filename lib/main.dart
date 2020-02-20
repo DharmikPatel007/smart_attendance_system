@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:smart_attendance_system/root_page.dart';
 import 'login_page.dart';
 import 'package:flutter/services.dart';
 import 'home_page.dart';
+import 'root_page.dart';
 
-void main() => runApp(MyApp());
+void main(){
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -17,8 +21,9 @@ class _MyAppState extends State<MyApp> {
         [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: HomePage(),
+      initialRoute: RootPage.id,
       routes: {
+        RootPage.id: (context) => RootPage(),
         LoginPage.id: (context) => LoginPage(),
         HomePage.id: (context) => HomePage(),
       },
