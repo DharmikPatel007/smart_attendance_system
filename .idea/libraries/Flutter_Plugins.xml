@@ -2,12 +2,13 @@
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
       <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-0.1.2+2" />
-      <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.6" />
       <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_ml_vision-0.9.3+5" />
       <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.4" />
-      <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.3+1" />
       <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-0.4.6+2" />
       <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.0" />
+      <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-3.1.3" />
+      <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.6+2" />
+      <root url="file:///apps/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.3+4" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

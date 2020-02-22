@@ -22,10 +22,10 @@ class Auth {
             body: {'email': '$email', 'password': '$password'});
         var data = jsonDecode(response.body);
         if (data['is_logged_in']) {
-          setPrefrences(true, data);
+          _setPrefrences(true, data);
           return 'true';
         } else {
-          setPrefrences(false, data);
+          _setPrefrences(false, data);
           return 'false';
         }
       } catch (e) {
@@ -36,7 +36,7 @@ class Auth {
       return 'noConnection';
     }
   }
-  setPrefrences(value,data) async {
+  _setPrefrences(value,data) async {
     prefs = await SharedPreferences.getInstance();
     if(value){
       await prefs.setBool('is_logged_in', true);

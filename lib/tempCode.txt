@@ -1,3 +1,21 @@
+//      print('rects : ${rects[i]}');
+//      print('topLeft : ${rects[i].topLeft}');
+//      print('topRight : ${rects[i].topRight}');
+//      print('bottomLeft : ${rects[i].bottomLeft}');
+//      print('bottomRight : ${rects[i].bottomRight}');
+//
+//      print('topLeft.X : ${rects[i].topLeft.dx}');
+//      print('topLeft.Y : ${rects[i].topLeft.dy}');
+//      print('topRight.X : ${rects[i].topRight.dx}');
+//      print('topRight.Y : ${rects[i].topRight.dy}');
+//      print('bottomLeft.X : ${rects[i].bottomLeft.dx}');
+//      print('bottomLeft.Y : ${rects[i].bottomLeft.dy}');
+//      print('bottomRight.X : ${rects[i].bottomRight.dx}');
+//      print('bottomRight.Y : ${rects[i].bottomRight.dy}');
+
+
+
+
 // static cropFaces(File img) {
   //   for(int i=0;i < rects.length ;i++){
   //     print('top left : ${rects[i].topLeft}');

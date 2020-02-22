@@ -9,6 +9,9 @@ import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:smart_attendance_system/root_page.dart';
 import 'auth.dart';
 import 'face_painter.dart';
+import 'package:image/image.dart' as img;
+import 'face_cropper.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatefulWidget {
   static String id = 'HomePageID';
@@ -59,12 +62,25 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    auth.getNameAndEmail().then((onValue){
+    auth.getNameAndEmail().then((onValue) {
       setState(() {
         _loginName = onValue[0].toUpperCase();
         _loginEmail = onValue[1];
       });
     });
+  }
+
+  _cropAndSave() {
+    final img.Image image = img.decodeImage(_imageFile.readAsBytesSync());
+    final List<Rect> rects = [];
+    for (int i = 0; i < _faces.length; i++) {
+      rects.add(_faces[i].boundingBox);
+    }
+    FaceCropper(orgImage: image, rects: rects).cropFacesAndSave();
+    Fluttertoast.showToast(
+      msg: 'Faces Cropped Successfully',
+      toastLength: Toast.LENGTH_LONG,
+    );
   }
 
   @override
@@ -73,7 +89,7 @@ class _HomePageState extends State<HomePage> {
       inAsyncCall: progressIndicator,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Select Images'),
+          title: Text('Smart Attendance System'),
         ),
         drawer: Drawer(
           child: ListView(children: <Widget>[
@@ -113,7 +129,7 @@ class _HomePageState extends State<HomePage> {
             ? Center(child: CircularProgressIndicator())
             : (_imageFile == null)
                 ? Center(child: Text('No image selected'))
-                : Column(
+                : Stack(
                     children: <Widget>[
                       Center(
                         child: FittedBox(
@@ -121,16 +137,21 @@ class _HomePageState extends State<HomePage> {
                             width: _image.width.toDouble(),
                             height: _image.height.toDouble(),
                             child: CustomPaint(
-                              painter: FacePainter(_image, _faces, _imageFile),
+                              painter: FacePainter(
+                                _image,
+                                _faces,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      RaisedButton(
-                        onPressed: () {
-                          // FacePainter.cropFaces(_imageFile);
-                        },
-                        child: Text('Crop Faces'),
+                      Positioned(
+                        top: 675,
+                        left: 130,
+                        child: RaisedButton(
+                          child: Text('Crop & Save'),
+                          onPressed: _cropAndSave,
+                        ),
                       )
                     ],
                   ),
