@@ -3,13 +3,38 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:image/image.dart' as img;
 
 class Auth {
 
   Connectivity connectivity;
   SharedPreferences prefs;
-  final String url = 'http://jatinparate.pythonanywhere.com/api/login/';
+  final String loginUrl = 'http://jatinparate.pythonanywhere.com/api/login/';
+  final String uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
 
+  Future<String> uploadImages(List<img.Image> image) async {
+    connectivity = Connectivity();
+    Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
+    ConnectivityResult status = await futureStatus;
+    if(status == ConnectivityResult.mobile ||
+        status == ConnectivityResult.wifi){
+      try{
+        var response = await http.post(uploadUrl,
+            body: {'property_id': '1', 'branch': 'CE' , 'class_str': 'E' , 'image': image});
+        var data = jsonDecode(response.body);
+        if(data['is_uploaded']){
+          return 'true';
+        }else{
+          return 'false';
+        }
+      }catch(e){
+        print(e);
+        return 'error';
+      }
+    }else{
+      return 'noConnection';
+    }
+  }
   Future<String> validateUser(String email,String password) async {
     connectivity = Connectivity();
     Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
@@ -18,7 +43,7 @@ class Auth {
     if (status == ConnectivityResult.mobile ||
         status == ConnectivityResult.wifi) {
       try {
-        var response = await http.post(url,
+        var response = await http.post(loginUrl,
             body: {'email': '$email', 'password': '$password'});
         var data = jsonDecode(response.body);
         if (data['is_logged_in']) {

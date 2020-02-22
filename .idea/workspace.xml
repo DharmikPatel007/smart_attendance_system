@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="726b90df-dc14-43ee-9b1c-3214ebf271f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/face_cropper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/dharmik.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/dharmik.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/face_painter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/face_painter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/face_cropper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/face_cropper.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tempCode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tempCode.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -37,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/home_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="151" column="53" lean-forward="true" selection-start-line="151" selection-start-column="53" selection-end-line="151" selection-end-column="53" />
+            <state relative-caret-position="1782">
+              <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -49,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/face_cropper.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="567">
+              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -61,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="756">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -70,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/face_painter.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
+            <state relative-caret-position="594">
               <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -82,10 +74,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/login_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-837">
+            <state relative-caret-position="648">
               <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/auth.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,13 +130,13 @@
         <option value="$PROJECT_DIR$/lib/auth_page.dart" />
         <option value="$PROJECT_DIR$/lib/login_page.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
-        <option value="$PROJECT_DIR$/lib/auth.dart" />
         <option value="$PROJECT_DIR$/lib/root_page.dart" />
         <option value="$PROJECT_DIR$/lib/face_painter.dart" />
         <option value="$PROJECT_DIR$/lib/tempCode.txt" />
-        <option value="$PROJECT_DIR$/lib/face_cropper.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/auth.dart" />
         <option value="$PROJECT_DIR$/lib/home_page.dart" />
+        <option value="$PROJECT_DIR$/lib/face_cropper.dart" />
       </list>
     </option>
   </component>
@@ -147,19 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="smart_attendance_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,6 +166,19 @@
             <path>
               <item name="smart_attendance_system" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="smart_attendance_system" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Desktop/MyWorkSpace/AndroidStudioProjects/smart_attendance_system" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -249,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582348096272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CropFaces is Working !!!">
+      <created>1582379302476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582379302476</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -265,7 +276,7 @@
     <frame x="-1" y="0" width="1922" height="1043" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18274383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18274383" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -282,7 +293,7 @@
       <window_info anchor="bottom" id="Debug" order="5" weight="0.50336325" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4994641" weight="0.3281075" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010718" side_tool="true" weight="0.48318386" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295964" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.20964126" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.2636656" />
@@ -326,7 +337,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Check the work donw by me !" />
     <MESSAGE value="Removed routes error !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed routes error !" />
+    <MESSAGE value="CropFaces is Working !!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="CropFaces is Working !!!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
@@ -444,12 +456,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/auth.dart">
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face12.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face14.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face3.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face2.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face11.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face10.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face1.jpg" />
+    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face0.jpg" />
+    <entry file="file://$PROJECT_DIR$/lib/home_page.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        <state relative-caret-position="1782">
+          <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/face_painter.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/login_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -461,71 +508,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face12.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face14.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/login_page.dart">
+    <entry file="file://$PROJECT_DIR$/lib/auth.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-837">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        <state relative-caret-position="455">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/face_painter.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face11.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face10.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/xiaomi-redmi_note_8_pro-prt8kngm69byqws8/data/data/com.d2aj.smart_attendance_system/app_flutter/face0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/home_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="151" column="53" lean-forward="true" selection-start-line="151" selection-start-column="53" selection-end-line="151" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/face_cropper.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="567">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

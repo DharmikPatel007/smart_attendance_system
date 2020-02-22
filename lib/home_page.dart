@@ -76,7 +76,9 @@ class _HomePageState extends State<HomePage> {
     for (int i = 0; i < _faces.length; i++) {
       rects.add(_faces[i].boundingBox);
     }
-    FaceCropper(orgImage: image, rects: rects).cropFacesAndSave();
+    FaceCropper(orgImage: image, rects: rects).cropFacesAndSave().then((onValue){
+      auth.uploadImages(onValue).then((value)=>print('faces are uploaded : $value'));
+    });
     Fluttertoast.showToast(
       msg: 'Faces Cropped Successfully',
       toastLength: Toast.LENGTH_LONG,

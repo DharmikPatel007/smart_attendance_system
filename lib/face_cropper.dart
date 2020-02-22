@@ -8,17 +8,21 @@ class FaceCropper {
   FaceCropper({this.orgImage,this.rects});
   final img.Image orgImage;
   final List<Rect> rects;
+  final List<File> croppedFileImages = [];
   
-  cropFacesAndSave() async {
-    for(int i=0; i<rects.length; i++){      // TODO : make for loop start from last cropped face and save cropped face count
+  Future<List<img.Image>> cropFacesAndSave() async {
+    for(int i=0; i<rects.length; i++){      // TODO : update this method
       img.Image croppedImage = img.copyCrop(orgImage, rects[i].topLeft.dx.toInt(),
           rects[i].topLeft.dy.toInt(), rects[i].width.toInt(), rects[i].height.toInt());
 
+      //If wonted to save cropped faces in local storage
       Directory dir = await getApplicationDocumentsDirectory();
       String path = dir.path;
-      print('path is : $path');
       File file = File('$path/face$i.jpg');
       file.writeAsBytesSync(img.encodeJpg(croppedImage));
+
+
     }
+    return croppedFileImages;
   }
 }
