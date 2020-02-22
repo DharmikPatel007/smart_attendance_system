@@ -15,7 +15,6 @@ class FaceCropper {
       img.Image croppedImage = img.copyCrop(orgImage, rects[i].topLeft.dx.toInt(),
           rects[i].topLeft.dy.toInt(), rects[i].width.toInt(), rects[i].height.toInt());
 
-      //If wonted to save cropped faces in local storage
       Directory dir = await getApplicationDocumentsDirectory();
       String path = dir.path;
       print('path is : $path');
