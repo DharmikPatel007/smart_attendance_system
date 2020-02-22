@@ -20,8 +20,6 @@ class FaceCropper {
       String path = dir.path;
       File file = File('$path/face$i.jpg');
       file.writeAsBytesSync(img.encodeJpg(croppedImage));
-
     }
-    return croppedImages;
   }
 }
