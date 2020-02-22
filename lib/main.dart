@@ -18,6 +18,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData.dark(),
       initialRoute: RootPage.id,
+      routes: {
+        RootPage.id : (BuildContext context) => RootPage(),
+      },
     );
   }
 }

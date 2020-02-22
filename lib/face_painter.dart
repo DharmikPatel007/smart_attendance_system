@@ -28,7 +28,7 @@ class FacePainter extends CustomPainter {
     canvas.drawImage(image, Offset.zero, Paint());
     for (var i = 0; i < faces.length; i++) {
       canvas.drawRect(rects[i], paint);
-      print(rects[i].topLeft);
+      print(rects[i]);
     }
   }
 
