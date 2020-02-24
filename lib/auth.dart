@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:image/image.dart' as img;
+import 'dart:io';
 
 class Auth {
 
@@ -12,17 +12,28 @@ class Auth {
   final String loginUrl = 'http://jatinparate.pythonanywhere.com/api/login/';
   final String uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
 
-  Future<String> uploadImages(List<img.Image> image) async {
+  Future<String> uploadImages(List<File> images) async {
     connectivity = Connectivity();
     Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
     ConnectivityResult status = await futureStatus;
     if(status == ConnectivityResult.mobile ||
         status == ConnectivityResult.wifi){
       try{
-        var response = await http.post(uploadUrl,
-            body: {'property_id': '1', 'branch': 'CE' , 'class_str': 'E' , 'image': image});
-        var data = jsonDecode(response.body);
-        if(data['is_uploaded']){
+
+        Uri uri = Uri.parse(uploadUrl);
+        http.MultipartRequest request = http.MultipartRequest('POST',uri);
+        request.fields['property_id'] = '1';
+        request.fields['branch'] = 'CE';
+        request.fields['class_str'] = 'E';
+        for(int i=0; i<images.length; i++){
+          request.files.add(http.MultipartFile('image',http.ByteStream(images[i].openRead()),
+              await images[i].length(),filename: images[i].path));
+        }
+        var response = await request.send();
+        response.stream.transform(utf8.decoder).listen((value){
+          print('upload images response : $value');
+        });
+        if(response.statusCode == 200){
           return 'true';
         }else{
           return 'false';

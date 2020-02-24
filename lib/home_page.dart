@@ -70,17 +70,25 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  _cropAndSave() {
+  _cropAndUpload() {
     final img.Image image = img.decodeImage(_imageFile.readAsBytesSync());
     final List<Rect> rects = [];
     for (int i = 0; i < _faces.length; i++) {
       rects.add(_faces[i].boundingBox);
     }
-    FaceCropper(orgImage: image, rects: rects).cropFacesAndSave();
-    Fluttertoast.showToast(
-      msg: 'Faces Cropped Successfully',
-      toastLength: Toast.LENGTH_LONG,
-    );
+    FaceCropper(orgImage: image, rects: rects).cropFacesAndSave().then((onValue){
+      auth.uploadImages(onValue).then((data){
+        setState(() {
+          progressIndicator = false;
+        });
+        print('Result of upload images : $data');
+        Fluttertoast.showToast(
+          msg: 'Faces Uploaded Successfully',
+          toastLength: Toast.LENGTH_LONG,
+        );
+      });
+    });
+
   }
 
   @override
@@ -149,8 +157,13 @@ class _HomePageState extends State<HomePage> {
                         top: 675,
                         left: 130,
                         child: RaisedButton(
-                          child: Text('Crop & Save'),
-                          onPressed: _cropAndSave,
+                          child: Text('Crop & Upload'),
+                          onPressed: (){
+                            setState(() {
+                              progressIndicator = true;
+                            });
+                            _cropAndUpload();
+                          },
                         ),
                       )
                     ],

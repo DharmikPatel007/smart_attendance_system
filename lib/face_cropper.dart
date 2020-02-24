@@ -10,7 +10,7 @@ class FaceCropper {
   final List<Rect> rects;
   final List<File> croppedImages = [];
   
-  cropFacesAndSave() async {
+  Future<List<File>> cropFacesAndSave() async {
     for(int i=0; i<rects.length; i++){
       img.Image croppedImage = img.copyCrop(orgImage, rects[i].topLeft.dx.toInt(),
           rects[i].topLeft.dy.toInt(), rects[i].width.toInt(), rects[i].height.toInt());
@@ -19,7 +19,8 @@ class FaceCropper {
       String path = dir.path;
       print('path is : $path');
       File file = File('$path/face$i.jpg');
-      file.writeAsBytesSync(img.encodeJpg(croppedImage));
+      croppedImages.add(await file.writeAsBytes(img.encodeJpg(croppedImage)));
     }
+    return croppedImages;
   }
 }
