@@ -17,7 +17,7 @@ class FaceCropper {
 
       Directory dir = await getApplicationDocumentsDirectory();
       String path = dir.path;
-      print('path is : $path');
+    //  print('path is : $path');
       File file = File('$path/face$i.jpg');
       croppedImages.add(await file.writeAsBytes(img.encodeJpg(croppedImage)));
     }

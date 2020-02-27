@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:connectivity/connectivity.dart';
-import 'auth.dart';
+import '../utils/util.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({@required this.isLogin});
@@ -15,7 +15,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  Auth auth = Auth();
+  Util util = Util();
   String _connectionStatus = 'none';
   StreamSubscription<ConnectivityResult> subscription;
   Connectivity connectivity;
@@ -111,10 +111,13 @@ class _LoginPageState extends State<LoginPage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Expanded(
-                  flex: 1,
-                  child: FlutterLogo(
-                    size: 20.0,
-                  ),
+                  flex: 2,
+                  child: Center(
+                      child: Text('Login to \nSmart Attendance System'.toUpperCase(),textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 22,letterSpacing: 2,color: Colors.teal,
+                            fontWeight: FontWeight.w600),
+                      )
+                  )
                 ),
                 Expanded(
                   flex: 3,
@@ -131,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             keyboardType: TextInputType.emailAddress,
                             validator: (value) {
-                              if (value.isEmpty) {
+                              if (value.isEmpty || !value.contains('@') || !value.contains('.')) {
                                 return 'Please enter valid email address.';
                               } else {
                                 return null;
@@ -159,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
                             splashColor: Colors.greenAccent,
                             onPressed: () {
                               if (_formKey.currentState.validate()) {
-                                auth.validateUser(email.text,password.text).then((onValue){
+                                util.validateUser(email.text,password.text).then((onValue){
                                   print('value is : $onValue');
                                   if(onValue == 'true'){
                                     widget.isLogin();

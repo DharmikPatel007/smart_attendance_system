@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:io';
 
-class Auth {
+class Util {
 
   Connectivity connectivity;
   SharedPreferences prefs;
@@ -13,13 +13,8 @@ class Auth {
   final String uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
 
   Future<String> uploadImages(List<File> images) async {
-    connectivity = Connectivity();
-    Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
-    ConnectivityResult status = await futureStatus;
-    if(status == ConnectivityResult.mobile ||
-        status == ConnectivityResult.wifi){
+    if(await isConnected()){
       try{
-
         Uri uri = Uri.parse(uploadUrl);
         http.MultipartRequest request = http.MultipartRequest('POST',uri);
         request.fields['property_id'] = '1';
@@ -29,11 +24,9 @@ class Auth {
           request.files.add(http.MultipartFile('image',http.ByteStream(images[i].openRead()),
               await images[i].length(),filename: images[i].path));
         }
-        var response = await request.send();
-        response.stream.transform(utf8.decoder).listen((value){
-          print('upload images response : $value');
-        });
-        if(response.statusCode == 200){
+        var streamedResponse = await request.send();
+//        streamedResponse.stream.transform(utf8.decoder).listen((value){});
+        if(streamedResponse.statusCode == 200){
           return 'true';
         }else{
           return 'false';
@@ -47,12 +40,8 @@ class Auth {
     }
   }
   Future<String> validateUser(String email,String password) async {
-    connectivity = Connectivity();
-    Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
-    ConnectivityResult status = await futureStatus;
-    print('Internet Status is : $status');
-    if (status == ConnectivityResult.mobile ||
-        status == ConnectivityResult.wifi) {
+
+    if (await isConnected()) {
       try {
         var response = await http.post(loginUrl,
             body: {'email': '$email', 'password': '$password'});
@@ -97,6 +86,16 @@ class Auth {
       return [prefs.getString('login_name'),prefs.getString('login_email')];
     }else{
       return ['UserName','UserEmail'];
+    }
+  }
+  Future<bool> isConnected() async {
+    connectivity = Connectivity();
+    Future<ConnectivityResult> futureStatus = connectivity.checkConnectivity();
+    ConnectivityResult status = await futureStatus;
+    if(status == ConnectivityResult.mobile || status == ConnectivityResult.wifi){
+      return true;
+    }else{
+      return false;
     }
   }
 }

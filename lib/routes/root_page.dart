@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_attendance_system/login_page.dart';
+import 'package:smart_attendance_system/routes/login_page.dart';
 import 'home_page.dart';
-import 'auth.dart';
+import '../utils/util.dart';
 
 class RootPage extends StatefulWidget {
   static String id = 'RootPadeID';
@@ -18,7 +18,7 @@ enum UserStatus {
 
 class _RootPageState extends State<RootPage> {
 
-  Auth auth = Auth();
+  Util util = Util();
   UserStatus status;
   bool isLoading = true;
 
@@ -29,7 +29,7 @@ class _RootPageState extends State<RootPage> {
   }
 
   void setStatus() async{
-      auth.checkLogin().then((onValue){
+      util.checkLogin().then((onValue){
         if(onValue){
           setState(() {
             status = UserStatus.isLoggedIn;

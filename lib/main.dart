@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_attendance_system/root_page.dart';
+import 'package:smart_attendance_system/routes/root_page.dart';
 import 'package:flutter/services.dart';
-import 'root_page.dart';
+import 'routes/root_page.dart';
 
 void main() => runApp(MyApp());
 

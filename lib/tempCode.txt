@@ -1,3 +1,22 @@
+//                        Positioned(
+//                          top: 510,
+//                          left: 130,
+//                          child: RaisedButton(
+//                            child: Text('Crop & Upload'),
+//                            onPressed: (){
+//                              setState(() {
+//                                progressIndicator = true;
+//                              });
+//                              _cropAndUpload();
+//                            },
+//                          ),
+//                        )
+
+
+
+
+
+
 //      print('rects : ${rects[i]}');
 //      print('topLeft : ${rects[i].topLeft}');
 //      print('topRight : ${rects[i].topRight}');
