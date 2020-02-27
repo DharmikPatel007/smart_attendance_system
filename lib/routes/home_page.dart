@@ -199,19 +199,16 @@ class _HomePageState extends State<HomePage> {
                                   createDropDown(list: _branches, initialItem: _currentBranch, onChanged: (value){
                                     setState(() {
                                       _currentBranch = value;
-                                      print(value);
                                     });
                                   }),
                                   createDropDown(list: _classes, initialItem: _currentClass, onChanged: (value){
                                     setState(() {
                                       _currentClass = value;
-                                      print(value);
                                     });
                                   }),
                                   createDropDown(list: _sems, initialItem: _currentSem, onChanged: (value){
                                     setState(() {
                                       _currentSem = value;
-                                      print(value);
                                     });
                                   }),
                                 ],
