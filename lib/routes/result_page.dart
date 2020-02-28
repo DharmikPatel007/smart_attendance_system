@@ -16,7 +16,7 @@ class ResultPage extends StatelessWidget {
     final Result args = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Student List'),
+        title: Text('Green: Present  |  Red: Absent'),
       ),
       body: Container(
         child: FutureBuilder(
