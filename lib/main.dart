@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: RootPage.id,
       routes: {
         RootPage.id : (BuildContext context) => RootPage(),
-        ResultPageState.id : (BuildContext context) => ResultPageState(),
+        ResultPage.id : (BuildContext context) => ResultPage(),
       },
 
     );

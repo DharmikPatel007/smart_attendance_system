@@ -103,7 +103,8 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Widget createDropDown({@required List<String> list,@required String initialItem,@required Function onChanged}) {
+  Widget createDropDown({@required List<String> list,
+    @required String initialItem,@required Function onChanged}) {
     return DropdownButton<String>(
       items: list.map((curItem){
         return DropdownMenuItem<String>(
@@ -240,8 +241,8 @@ class _HomePageState extends State<HomePage> {
                                     child: RaisedButton(
                                       child: Text('Take Attendance'),
                                       onPressed: () {
-                                        Navigator.of(context).pushNamed(ResultPageState.id,
-                                            arguments: ResultPage(_currentClass,_currentBranch,_currentSem)
+                                        Navigator.of(context).pushNamed(ResultPage.id,
+                                            arguments: Result(_currentClass,_currentBranch,_currentSem)
                                         );
                                       },
                                     ),
