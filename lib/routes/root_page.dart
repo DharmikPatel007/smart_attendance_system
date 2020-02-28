@@ -4,7 +4,7 @@ import 'home_page.dart';
 import '../utils/util.dart';
 
 class RootPage extends StatefulWidget {
-  static String id = 'RootPadeID';
+  static final String id = 'RootPadeID';
   @override
   _RootPageState createState() => _RootPageState();
 }

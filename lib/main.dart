@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_attendance_system/routes/result_page.dart';
 import 'package:smart_attendance_system/routes/root_page.dart';
 import 'package:flutter/services.dart';
 import 'routes/root_page.dart';
@@ -20,7 +21,9 @@ class _MyAppState extends State<MyApp> {
       initialRoute: RootPage.id,
       routes: {
         RootPage.id : (BuildContext context) => RootPage(),
+        ResultPageState.id : (BuildContext context) => ResultPageState(),
       },
+
     );
   }
 }

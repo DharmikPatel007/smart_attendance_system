@@ -4,22 +4,54 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:io';
+import '../utils/student.dart';
 
 class Util {
 
   Connectivity connectivity;
   SharedPreferences prefs;
-  final String loginUrl = 'http://jatinparate.pythonanywhere.com/api/login/';
-  final String uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
 
-  Future<String> uploadImages(List<File> images) async {
+  final String _loginUrl = 'http://jatinparate.pythonanywhere.com/api/login/';
+  final String _uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
+  final String _recogniseUrl = 'http://jatinparate.pythonanywhere.com/api/recognize/';
+
+  Future<List<Student>> recogniseStudents(String classStr,String branch,String sem) async {
+    final List<Student> students = [];
     if(await isConnected()){
       try{
-        Uri uri = Uri.parse(uploadUrl);
+        var response = await http.post(_recogniseUrl, body: {
+         'class_str' : classStr,
+          'branch' : branch,
+          'sem' : sem,
+        });
+        var studentData = jsonDecode(response.body);
+        String _klass = studentData['class'];
+        String _branch = studentData['branch'];
+        var _arrStudents = studentData['students'];
+        if(_arrStudents != null){
+          for(var s in _arrStudents){
+            students.add(Student(_klass,_branch,s['enrollment_no'],s['name'],s['is_present']));
+          }
+        }
+        return students;
+      }catch(e){
+        print(e);
+        students.add(Student('Error','','','',false));
+        return students;
+      }
+    }else{
+      students.add(Student('Not Connected','','','',false));
+      return students;
+    }
+  }
+  Future<String> uploadImages(List<File> images, String branch, String classStr) async {
+    if(await isConnected()){
+      try{
+        Uri uri = Uri.parse(_uploadUrl);
         http.MultipartRequest request = http.MultipartRequest('POST',uri);
         request.fields['property_id'] = '1';
-        request.fields['branch'] = 'CE';
-        request.fields['class_str'] = 'E';
+        request.fields['branch'] = branch;
+        request.fields['class_str'] = classStr;
         for(int i=0; i<images.length; i++){
           request.files.add(http.MultipartFile('image',http.ByteStream(images[i].openRead()),
               await images[i].length(),filename: images[i].path));
@@ -43,7 +75,7 @@ class Util {
 
     if (await isConnected()) {
       try {
-        var response = await http.post(loginUrl,
+        var response = await http.post(_loginUrl,
             body: {'email': '$email', 'password': '$password'});
         var data = jsonDecode(response.body);
         if (data['is_logged_in']) {

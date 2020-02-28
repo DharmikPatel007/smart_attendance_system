@@ -12,9 +12,10 @@ import '../utils/face_painter.dart';
 import 'package:image/image.dart' as img;
 import '../utils/face_cropper.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'result_page.dart';
 
 class HomePage extends StatefulWidget {
-  static String id = 'HomePageID';
+  static final String id = 'HomePageID';
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -77,7 +78,7 @@ class _HomePageState extends State<HomePage> {
     FaceCropper(orgImage: image, rects: rects)
         .cropFacesAndSave()
         .then((onValue) {
-      util.uploadImages(onValue).then((data) {
+      util.uploadImages(onValue, _currentBranch, _currentClass).then((data) {
         setState(() {
           progressIndicator = false;
         });
@@ -126,6 +127,11 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  @override
+  void deactivate() {
+    super.deactivate();
+//    _imageFile = null;
+  }
   @override
   Widget build(BuildContext context) {
     return ModalProgressHUD(
@@ -234,6 +240,9 @@ class _HomePageState extends State<HomePage> {
                                     child: RaisedButton(
                                       child: Text('Take Attendance'),
                                       onPressed: () {
+                                        Navigator.of(context).pushNamed(ResultPageState.id,
+                                            arguments: ResultPage(_currentClass,_currentBranch,_currentSem)
+                                        );
                                       },
                                     ),
                                   ),

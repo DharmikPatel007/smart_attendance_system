@@ -9,7 +9,7 @@ class LoginPage extends StatefulWidget {
   LoginPage({@required this.isLogin});
   final VoidCallback isLogin;
 
-  static String id = 'LoginPageID';
+  static final String id = 'LoginPageID';
   @override
   _LoginPageState createState() => _LoginPageState();
 }
