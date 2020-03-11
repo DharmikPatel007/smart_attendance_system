@@ -3,6 +3,8 @@ import 'package:smart_attendance_system/routes/result_page.dart';
 import 'package:smart_attendance_system/routes/root_page.dart';
 import 'package:flutter/services.dart';
 import 'routes/root_page.dart';
+import './drawer/about_us.dart';
+import './drawer/take_attendance.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,6 +24,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         RootPage.id : (BuildContext context) => RootPage(),
         ResultPage.id : (BuildContext context) => ResultPage(),
+        AboutPage.id : (BuildContext context) => AboutPage(),
+        AttendancePage.id : (BuildContext context) => AttendancePage(),
       },
 
     );

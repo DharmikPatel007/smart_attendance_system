@@ -79,10 +79,10 @@ class Util {
             body: {'email': '$email', 'password': '$password'});
         var data = jsonDecode(response.body);
         if (data['is_logged_in']) {
-          _setPrefrences(true, data);
+          await _setPrefrences(true, data);
           return 'true';
         } else {
-          _setPrefrences(false, data);
+          await _setPrefrences(false, data);
           return 'false';
         }
       } catch (e) {
@@ -96,11 +96,11 @@ class Util {
   _setPrefrences(value,data) async {
     prefs = await SharedPreferences.getInstance();
     if(value){
-      await prefs.setBool('is_logged_in', true);
-      await prefs.setString('login_name', data['name']);
-      await prefs.setString('login_email', data['email']);
+       prefs.setBool('is_logged_in', true);
+       prefs.setString('login_name', data['name']);
+       prefs.setString('login_email', data['email']);
     }else{
-      await prefs.setBool('is_logged_in', false);
+       prefs.setBool('is_logged_in', false);
     }
   }
   Future<bool> checkLogin() async {

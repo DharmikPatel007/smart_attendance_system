@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_attendance_system/routes/login_page.dart';
-import 'home_page.dart';
+import '../routes/home_page.dart';
 import '../utils/util.dart';
 
 class RootPage extends StatefulWidget {
