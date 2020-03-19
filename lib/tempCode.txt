@@ -1,3 +1,43 @@
+//                              Card(
+//                                color: Colors.blueAccent,
+//                                margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+//                                child: Padding(
+//                                  padding: const EdgeInsets.all(12.0),
+//                                  child: Row(
+//                                    children: <Widget>[
+//                                      Expanded(
+//                                        flex: 8,
+//                                        child: Text('E.NO: ${snapshot.data[index].enrollNumber}',
+//                                          style: TextStyle(fontSize: 16),
+//                                        ),
+//                                      ),
+//                                      Expanded(
+//                                        flex: 7,
+//                                        child: Text(snapshot.data[index].name,
+//                                          style: TextStyle(
+//                                              fontSize: 16
+//                                          ),
+//                                        ),
+//                                      ),
+//                                      Expanded(
+//                                        child: Text(snapshot.data[index].klass),
+//                                      )
+//                                    ],
+//                                  ),
+//                                ),
+//                              );
+
+
+
+
+
+
+
+
+
+
+
+
 //                        Positioned(
 //                          top: 510,
 //                          left: 130,

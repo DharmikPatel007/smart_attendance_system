@@ -54,7 +54,7 @@ class ResultPage extends StatelessWidget {
                               ),
                               Expanded(
                                 flex: 7,
-                                child: Text(snapshot.data[index].name,
+                                child: Text(snapshot.data[index].name.toString().toUpperCase(),
                                   style: TextStyle(
                                     fontSize: 16
                                   ),

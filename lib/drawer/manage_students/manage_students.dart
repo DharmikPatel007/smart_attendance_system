@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../utils/util.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'student_details.dart';
 
 class ManageStudentsPage extends StatefulWidget {
   static final String id = 'ManageStudentsPageID';
@@ -116,33 +118,26 @@ class _ManageStudentsPageState extends State<ManageStudentsPage> {
                           return ListView.builder(
                             itemCount: snapshot.data.length,
                             itemBuilder: (BuildContext context,int index){
-                              return Card(
-                                color: Colors.blueAccent,
-                                margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(12.0),
-                                  child: Row(
-                                    children: <Widget>[
-                                      Expanded(
-                                        flex: 8,
-                                        child: Text('E.NO: ${snapshot.data[index].enrollNumber}',
-                                          style: TextStyle(fontSize: 16),
-                                        ),
-                                      ),
-                                      Expanded(
-                                        flex: 7,
-                                        child: Text(snapshot.data[index].name,
-                                          style: TextStyle(
-                                              fontSize: 16
-                                          ),
-                                        ),
-                                      ),
-                                      Expanded(
-                                        child: Text(snapshot.data[index].klass),
-                                      )
-                                    ],
-                                  ),
+                              return ListTile(
+                                leading: CircleAvatar(
+                                  radius: 25,
+                                  child: Icon(Icons.account_circle,size: 40,),
                                 ),
+                                title: Text(snapshot.data[index].name.toString().toUpperCase(),
+                                  style: TextStyle(fontSize: 18,letterSpacing: 1.1),
+                                ),
+                                subtitle: Text(snapshot.data[index].enrollNumber,
+                                  style: TextStyle(fontSize: 16,letterSpacing: 1.5),
+                                ),
+                                trailing: Icon(Icons.arrow_forward_ios),
+                                onTap: (){
+                                  Navigator.of(context).pushNamed(StudentDetailsPage.id,
+                                      arguments: StudentDetails(snapshot.data[index].klass,
+                                          snapshot.data[index].branch,snapshot.data[index].sem,
+                                          snapshot.data[index].enrollNumber,
+                                        snapshot.data[index].name,snapshot.data[index].parentEmail
+                                      ));
+                                },
                               );
                             },
                           );

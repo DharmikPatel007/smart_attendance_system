@@ -10,14 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="726b90df-dc14-43ee-9b1c-3214ebf271f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/manage_students.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/take_attendance.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/take_attendance.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/result_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/manage_students.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/manage_students.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tempCode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tempCode.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584611890713</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Manage Students is Added !">
+      <created>1584634422419</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584634422419</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
