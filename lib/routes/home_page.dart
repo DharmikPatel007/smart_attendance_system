@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:smart_attendance_system/drawer/manage_students.dart';
+import 'package:smart_attendance_system/drawer/manage_students/manage_students.dart';
 import '../utils/util.dart';
 import 'package:flutter/cupertino.dart';
 import '../drawer/about_us.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../routes/root_page.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
-import '../drawer/take_attendance.dart';
+import '../drawer/take_attendance/take_attendance.dart';
 
 class HomePage extends StatefulWidget {
   @override

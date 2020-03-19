@@ -1,17 +1,26 @@
 import 'package:flutter/material.dart';
-import '../utils/util.dart';
-class ManageStudentsPage extends StatelessWidget {
-  static final String id = 'ManageStudentsPageID';
+import '../../utils/util.dart';
+
+class Result {
+  Result(this._classStr,this._branch,this._sem);
+  final String _classStr;
+  final String _branch;
+  final String _sem;
+}
+
+class ResultPage extends StatelessWidget {
+  static final String id = 'ResultPageID';
   final Util util = Util();
   @override
   Widget build(BuildContext context) {
+    final Result args = ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Manage Students'),
+        title: Text('Green: Present  |  Red: Absent'),
       ),
       body: Container(
         child: FutureBuilder(
-          future: util.getStudentsList('E', 'CE', 'sem-8'),
+          future: util.recogniseStudents(args._classStr, args._branch, args._sem),
           builder: (BuildContext context,AsyncSnapshot snapshot){
             if(snapshot.hasData){
                 if(snapshot.data[0].klass == 'Error'){
@@ -22,16 +31,16 @@ class ManageStudentsPage extends StatelessWidget {
                   return Center(
                     child: Text('No Internet Connection'),
                   );
-                }else if(snapshot.data[0].klass == 'No Students'){
+                }else if(snapshot.data[0].klass == 'No Face'){
                   return Center(
-                    child: Text('No Students Available !'),
+                    child: Text('No Face Data Available !'),
                   );
                 }else{
                   return ListView.builder(
                     itemCount: snapshot.data.length,
                     itemBuilder: (BuildContext context,int index){
                       return Card(
-                        color: Colors.indigoAccent,
+                        color: snapshot.data[index].isPresent ? Colors.lightGreen : Colors.redAccent,
                         margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
                         child: Padding(
                           padding: const EdgeInsets.all(12.0),
@@ -47,7 +56,7 @@ class ManageStudentsPage extends StatelessWidget {
                                 flex: 7,
                                 child: Text(snapshot.data[index].name,
                                   style: TextStyle(
-                                      fontSize: 16
+                                    fontSize: 16
                                   ),
                                 ),
                               ),

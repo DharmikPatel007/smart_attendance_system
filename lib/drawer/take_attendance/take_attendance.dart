@@ -9,10 +9,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter_image_compress/flutter_image_compress.dart';
-import '../routes/result_page.dart';
-import '../utils/face_cropper.dart';
-import '../utils/util.dart';
-import '../utils/face_painter.dart';
+import 'attendance_result.dart';
+import '../../utils/face_cropper.dart';
+import '../../utils/util.dart';
+import '../../utils/face_painter.dart';
 
 class AttendancePage extends StatefulWidget {
   static final String id = 'AttendancePageID';

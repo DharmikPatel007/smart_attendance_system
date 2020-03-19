@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:smart_attendance_system/drawer/manage_students.dart';
-import 'package:smart_attendance_system/routes/result_page.dart';
+import 'package:smart_attendance_system/drawer/manage_students/manage_students.dart';
+import 'package:smart_attendance_system/drawer/manage_students/student_details.dart';
+import 'package:smart_attendance_system/drawer/take_attendance/attendance_result.dart';
 import 'package:smart_attendance_system/routes/root_page.dart';
 import 'package:flutter/services.dart';
 import 'routes/root_page.dart';
 import './drawer/about_us.dart';
-import './drawer/take_attendance.dart';
+import 'drawer/take_attendance/take_attendance.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,6 +29,7 @@ class _MyAppState extends State<MyApp> {
         AboutPage.id : (BuildContext context) => AboutPage(),
         AttendancePage.id : (BuildContext context) => AttendancePage(),
         ManageStudentsPage.id : (BuildContext context) => ManageStudentsPage(),
+        StudentDetailsPage.id : (BuildContext context) => StudentDetailsPage(),
       },
 
     );

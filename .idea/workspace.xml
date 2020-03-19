@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="726b90df-dc14-43ee-9b1c-3214ebf271f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/manage_students.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/take_attendance.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/take_attendance.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/result_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/result_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/student.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/student.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes/result_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/util.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/drawer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/drawer/take_attendance" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -58,16 +59,16 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/drawer" />
-      <recent name="$PROJECT_DIR$/lib/utils" />
-      <recent name="$PROJECT_DIR$/lib/routes" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/drawer/take_attendance" />
+      <recent name="$PROJECT_DIR$/lib/drawer/manage_students" />
+      <recent name="$PROJECT_DIR$/lib/drawer" />
+      <recent name="$PROJECT_DIR$/lib/utils" />
+      <recent name="$PROJECT_DIR$/lib/routes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582387706410</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Manage Students is Added !">
+      <created>1584611890713</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584611890713</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -185,7 +193,8 @@
     <MESSAGE value="Check the work donw by me !" />
     <MESSAGE value="Removed routes error !" />
     <MESSAGE value="CropFaces is Working !!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="CropFaces is Working !!!" />
+    <MESSAGE value="Manage Students is Added !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manage Students is Added !" />
   </component>
   <component name="masterDetails">
     <states>

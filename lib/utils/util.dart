@@ -63,7 +63,7 @@ class Util {
             students.add(Student(_klass,_branch,s['enrollment_no'],s['name'],s['is_present'],sem,'parent_email'));
           }
         }else{
-          students.add(Student('No Students','','','',false,'',''));
+          students.add(Student('No Face','','','',false,'',''));
         }
         return students;
       }catch(e){
