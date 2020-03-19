@@ -14,7 +14,37 @@ class Util {
   final String _loginUrl = 'http://jatinparate.pythonanywhere.com/api/login/';
   final String _uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
   final String _recogniseUrl = 'http://jatinparate.pythonanywhere.com/api/recognize/';
+  final String _getStudentsUrl = 'http://jatinparate.pythonanywhere.com/api/getStudentsList/';
 
+  Future<List<Student>> getStudentsList(String classStr,String branch,String sem) async {
+    final List<Student> students = [];
+    if(await isConnected()){
+      try{
+        var response = await http.post(_getStudentsUrl, body: {
+          'branch' : branch,
+          'class' : classStr,
+          'sem' : sem,
+        });
+        var studentData = await jsonDecode(response.body);
+        var _arrStudents = studentData['data'];
+        if(_arrStudents.length > 0){
+          for(var s in _arrStudents){
+            students.add(Student(s['class'],s['branch'],s['enrollment_no'],s['name'],false,s['sem'],s['parent_email']));
+          }
+        }else{
+          students.add(Student('No Students','','','',false,'',''));
+        }
+        return students;
+      }catch(e){
+        print(e);
+        students.add(Student('Error','','','',false,'',''));
+        return students;
+      }
+    }else{
+      students.add(Student('Not Connected','','','',false,'',''));
+      return students;
+    }
+  }
   Future<List<Student>> recogniseStudents(String classStr,String branch,String sem) async {
     final List<Student> students = [];
     if(await isConnected()){
@@ -24,23 +54,25 @@ class Util {
           'branch' : branch,
           'sem' : sem,
         });
-        var studentData = jsonDecode(response.body);
+        var studentData = await jsonDecode(response.body);
         String _klass = studentData['class'];
         String _branch = studentData['branch'];
         var _arrStudents = studentData['students'];
-        if(_arrStudents != null){
+        if(_arrStudents.length > 0){
           for(var s in _arrStudents){
-            students.add(Student(_klass,_branch,s['enrollment_no'],s['name'],s['is_present']));
+            students.add(Student(_klass,_branch,s['enrollment_no'],s['name'],s['is_present'],sem,'parent_email'));
           }
+        }else{
+          students.add(Student('No Students','','','',false,'',''));
         }
         return students;
       }catch(e){
         print(e);
-        students.add(Student('Error','','','',false));
+        students.add(Student('Error','','','',false,'',''));
         return students;
       }
     }else{
-      students.add(Student('Not Connected','','','',false));
+      students.add(Student('Not Connected','','','',false,'',''));
       return students;
     }
   }

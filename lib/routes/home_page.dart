@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_attendance_system/drawer/manage_students.dart';
 import '../utils/util.dart';
 import 'package:flutter/cupertino.dart';
 import '../drawer/about_us.dart';
@@ -57,6 +58,9 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: Text('Manage Students'),
               trailing: Icon(CupertinoIcons.gear_solid),
+              onTap: (){
+                Navigator.of(context).pushNamed(ManageStudentsPage.id);
+                },
             ),
             Divider(),
             ListTile(

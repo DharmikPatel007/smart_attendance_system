@@ -23,7 +23,6 @@ class ResultPage extends StatelessWidget {
           future: util.recogniseStudents(args._classStr, args._branch, args._sem),
           builder: (BuildContext context,AsyncSnapshot snapshot){
             if(snapshot.hasData){
-              if(snapshot.data.length > 1){
                 if(snapshot.data[0].klass == 'Error'){
                   return Center(
                     child: Text('Something went wrong !'),
@@ -31,6 +30,10 @@ class ResultPage extends StatelessWidget {
                 }else if(snapshot.data[0].klass == 'Not Connected'){
                   return Center(
                     child: Text('No Internet Connection'),
+                  );
+                }else if(snapshot.data[0].klass == 'No Students'){
+                  return Center(
+                    child: Text('No Students Available !'),
                   );
                 }else{
                   return ListView.builder(
@@ -67,13 +70,6 @@ class ResultPage extends StatelessWidget {
                     },
                   );
                 }
-              }else{
-                return Container(
-                  child: Center(
-                    child: Text('Face data not available !'),
-                  ),
-                );
-              }
             }else{
               return Center(child: CircularProgressIndicator());
             }
