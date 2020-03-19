@@ -15,7 +15,31 @@ class Util {
   final String _uploadUrl = 'http://jatinparate.pythonanywhere.com/api/upload/';
   final String _recogniseUrl = 'http://jatinparate.pythonanywhere.com/api/recognize/';
   final String _getStudentsUrl = 'http://jatinparate.pythonanywhere.com/api/getStudentsList/';
+  final String _getAvgAttUrl = 'http://jatinparate.pythonanywhere.com/api/get_average_attendance/';
 
+  Future<String> getAvgAttendance(String classStr,String branch,String sem,String enrollNumber) async {
+    if(await isConnected()){
+      try{
+        var response = await http.post(_getAvgAttUrl,body: {
+          'class_str' : classStr,
+          'branch' : branch,
+          'sem' : sem,
+          'enrollment' : enrollNumber
+        });
+        var data = jsonDecode(response.body);
+        if(data.length > 0){
+          return ((data['present']/data['total'])*100).toString();
+        }else{
+          return 'No Data';
+        }
+      }catch(e){
+        print(e);
+        return 'Error';
+      }
+    }else{
+      return 'Not Connected';
+    }
+  }
   Future<List<Student>> getStudentsList(String classStr,String branch,String sem) async {
     final List<Student> students = [];
     if(await isConnected()){
@@ -25,7 +49,7 @@ class Util {
           'class' : classStr,
           'sem' : sem,
         });
-        var studentData = await jsonDecode(response.body);
+        var studentData = jsonDecode(response.body);
         var _arrStudents = studentData['data'];
         if(_arrStudents.length > 0){
           for(var s in _arrStudents){
@@ -54,7 +78,7 @@ class Util {
           'branch' : branch,
           'sem' : sem,
         });
-        var studentData = await jsonDecode(response.body);
+        var studentData = jsonDecode(response.body);
         String _klass = studentData['class'];
         String _branch = studentData['branch'];
         var _arrStudents = studentData['students'];
