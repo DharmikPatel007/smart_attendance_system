@@ -90,91 +90,10 @@ class _HomePageState extends State<HomePage> {
             )
           ]),
         ),
-<<<<<<< HEAD
         body: Center(
           child: Container(
             child: Text('Welcome To Smart Attendance System !'),
           ),
-=======
-        body: isLoading
-            ? Center(child: CircularProgressIndicator())
-            : (_imageFile == null)
-                ? Center(child: Text('No image selected'))
-                : Container(
-                    child: Column(
-                      children: <Widget>[
-                        Expanded(
-                          flex: 3,
-                          child: FittedBox(
-                            child: SizedBox(
-                              width: _image.width.toDouble(),
-                              height: _image.height.toDouble(),
-                              child: CustomPaint(
-                                painter: FacePainter(
-                                  _image,
-                                  _faces,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            children: <Widget>[
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                children: <Widget>[
-                                  createDropDown(list: _branches, initialItem: _currentBranch, onChanged: (value){
-                                    setState(() {
-                                      _currentBranch = value;
-                                    });
-                                  }),
-                                  createDropDown(list: _classes, initialItem: _currentClass, onChanged: (value){
-                                    setState(() {
-                                      _currentClass = value;
-                                    });
-                                  }),
-                                  createDropDown(list: _sems, initialItem: _currentSem, onChanged: (value){
-                                    setState(() {
-                                      _currentSem = value;
-                                    });
-                                  }),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                children: <Widget>[
-                                  Center(
-                                    child: RaisedButton(
-                                      child: Text('Crop & Upload'),
-                                      onPressed: () {
-                                        setState(() {
-                                          progressIndicator = true;
-                                        });
-                                        _cropAndUpload();
-                                      },
-                                    ),
-                                  ),
-                                  Center(
-                                    child: RaisedButton(
-                                      child: Text('Take Attendance'),
-                                      onPressed: () {
-                                      },
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _getImageAndDetectFaces,
-          tooltip: 'Pick Image',
-          child: Icon(Icons.add_a_photo),
->>>>>>> master
         ),
       ),
     );
