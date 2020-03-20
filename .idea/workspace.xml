@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="726b90df-dc14-43ee-9b1c-3214ebf271f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584643288670</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Student Details Page is Now Added.">
+      <created>1584686700233</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584686700234</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -210,7 +216,8 @@
     <MESSAGE value="Removed routes error !" />
     <MESSAGE value="CropFaces is Working !!!" />
     <MESSAGE value="Manage Students is Added !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manage Students is Added !" />
+    <MESSAGE value="Student Details Page is Now Added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Student Details Page is Now Added." />
   </component>
   <component name="masterDetails">
     <states>
