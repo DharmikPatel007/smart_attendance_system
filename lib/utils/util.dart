@@ -16,28 +16,61 @@ class Util {
   final String _recogniseUrl = 'http://jatinparate.pythonanywhere.com/api/recognize/';
   final String _getStudentsUrl = 'http://jatinparate.pythonanywhere.com/api/getStudentsList/';
   final String _getAvgAttUrl = 'http://jatinparate.pythonanywhere.com/api/get_average_attendance/';
+  final String _sendEmailUrl = 'http://jatinparate.pythonanywhere.com/api/sendEmail/';
 
-  Future<String> getAvgAttendance(String classStr,String branch,String sem,String enrollNumber) async {
+  Future<String> sendEmail(String enroll,String branch,String classStr,int total,int present) async {
+    if(await isConnected()){
+      try{
+        var response = await http.post(_sendEmailUrl,body: {
+          'enrollment' : enroll,
+          'branch' : branch,
+          'class_str' : classStr,
+          'total_lactures' : total.toString(),
+          'present_lactures' : present.toString()
+        });
+        var data = jsonDecode(response.body);
+        if(data.length > 0 && data['msg'] == 'sent'){
+          return 'true';
+        }else{
+          return 'false';
+        }
+      }catch(e){
+        print(e);
+        return 'error';
+      }
+    }else{
+      return 'noConnection';
+    }
+  }
+
+  Future<List> getAvgAttendance(String classStr,String branch,String sem,String enrollNumber) async {
+    List values = [];
     if(await isConnected()){
       try{
         var response = await http.post(_getAvgAttUrl,body: {
           'class_str' : classStr,
           'branch' : branch,
-          'sem' : sem,
+          'sem' : 'sem-$sem',
           'enrollment' : enrollNumber
         });
         var data = jsonDecode(response.body);
         if(data.length > 0){
-          return ((data['present']/data['total'])*100).toString();
+          values.add((data['present']/data['total']*100).toString());
+          values.add(data['present']);
+          values.add(data['total']);
+          return values;
         }else{
-          return 'No Data';
+          values.add('noData');
+          return values;
         }
       }catch(e){
         print(e);
-        return 'Error';
+        values.add('error');
+        return values;
       }
     }else{
-      return 'Not Connected';
+      values.add('noConnection');
+      return values;
     }
   }
   Future<List<Student>> getStudentsList(String classStr,String branch,String sem) async {
