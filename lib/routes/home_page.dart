@@ -43,15 +43,16 @@ class _HomePageState extends State<HomePage> {
         _loginEmail = onValue[1];
       });
     });
-    for(int i=0; i<6; i++){
-      imageList.add(Image.asset('images/carousel/c$i.jpg',
-        fit: BoxFit.fill,
-        width: 300,
-      ));
-    }
+
   }
   @override
   Widget build(BuildContext context) {
+    for(int i=0; i<6; i++){
+      imageList.add(Image.asset('images/carousel/c$i.jpg',
+        fit: BoxFit.fill,
+        width: MediaQuery.of(context).size.width,
+      ));
+    }
     return ModalProgressHUD(
       inAsyncCall: progressIndicator,
       child: Scaffold(
@@ -110,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                 items: imageList,
                 enlargeCenterPage: true,
                 pauseAutoPlayOnTouch: Duration(seconds: 1),
-                height: 375,
+                height: MediaQuery.of(context).size.height/2,
               ),
             ),
             Row(
@@ -147,7 +148,8 @@ class ReusableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        width: 190,
+        width: MediaQuery.of(context).size.width/2,
+        height: MediaQuery.of(context).size.height/5,
         child: Card(
           color: Colors.black38,
           elevation: 5,
@@ -155,9 +157,9 @@ class ReusableCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Icon(iconData,size: 125,),
+              Icon(iconData,size: MediaQuery.of(context).size.width/5,),
               Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: const EdgeInsets.only(bottom: 4,top: 2),
                 child: Text(cardLabel,
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
