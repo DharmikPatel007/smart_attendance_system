@@ -10,9 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

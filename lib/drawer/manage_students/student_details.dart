@@ -82,7 +82,7 @@ class _StudentDetailsPageState extends State<StudentDetailsPage> {
                                 if(snapshot.hasData){
                                   if(snapshot.data[0] == 'noData' || snapshot.data[0] == 'noConnection' ||
                                       snapshot.data[0] == 'error') {
-                                    return Text('Average Attendance : NA',
+                                    return Text('Avg.Attendance : NA',
                                       style: TextStyle(fontSize: 28),
                                     );
                                   } else {
