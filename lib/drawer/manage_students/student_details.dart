@@ -49,7 +49,7 @@ class _StudentDetailsPageState extends State<StudentDetailsPage> {
                           flex: 4,
                           child: Icon(
                             Icons.account_box,
-                            size: 200,
+                            size: MediaQuery.of(context).size.width/2.5,
                           ),
                         ),
                         Expanded(
@@ -88,7 +88,7 @@ class _StudentDetailsPageState extends State<StudentDetailsPage> {
                                   } else {
                                     present = snapshot.data[1];
                                     total = snapshot.data[2];
-                                    return Text('Average Attendance : ${snapshot.data[0].toString()} %',
+                                    return Text('Avg.Attendance : ${snapshot.data[0].toString()} %',
                                       style: TextStyle(fontSize: 28),
                                     );
                                   }
@@ -150,7 +150,9 @@ class _StudentDetailsPageState extends State<StudentDetailsPage> {
                                   style: TextStyle(fontSize: 20),
                                     textAlign: TextAlign.center,
                                   ),
-                                  Icon(Icons.arrow_downward)
+                                  Icon(Icons.arrow_downward,
+                                  size: MediaQuery.of(context).size.width/23,
+                                  )
                                 ],
                               ),
                             ),

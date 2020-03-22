@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added.">
-      <change afterPath="$PROJECT_DIR$/images/carousel/c0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carousel/c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carousel/c2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carousel/c3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carousel/c4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carousel/c5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +23,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="prt8kngm69byqws8" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29_v10" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
