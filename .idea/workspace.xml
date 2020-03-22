@@ -10,9 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added.">
+      <change afterPath="$PROJECT_DIR$/images/carousel/c0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carousel/c5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="FlutterView" splitter-proportion="0.96147674" />
+  <component name="FlutterView" splitter-proportion="0.9123103" />
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -51,25 +62,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/drawer/take_attendance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/carousel" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/drawer/take_attendance" />
       <recent name="$PROJECT_DIR$/lib/drawer/manage_students" />
       <recent name="$PROJECT_DIR$/lib/drawer" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/lib/routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/carousel" />
+      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
