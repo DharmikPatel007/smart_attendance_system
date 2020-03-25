@@ -56,17 +56,17 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/carousel" />
-      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/drawer/take_attendance" />
       <recent name="$PROJECT_DIR$/lib/drawer/manage_students" />
       <recent name="$PROJECT_DIR$/lib/drawer" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/lib/routes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/carousel" />
+      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
