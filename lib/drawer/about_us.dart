@@ -38,7 +38,7 @@ class AboutPage extends StatelessWidget {
               description: 'Whoohoo ! Documentation Work of this project is created me ! '
                   'We are using Google\'s FireBase Vision as '
                   'frontend Engine for Better Face Recognisation.',
-              photoPath: '',
+              photoPath: 'images/about/anant.jpg',
             ),
             Divider(),
             PersonDetails(
