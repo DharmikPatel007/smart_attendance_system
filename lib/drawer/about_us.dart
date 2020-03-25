@@ -7,7 +7,7 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('About US'),
       ),
-      body: Container(
+      body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             PersonDetails(
@@ -47,19 +47,17 @@ class AboutPage extends StatelessWidget {
               direction: TextDirection.rtl,
               description: 'Greetings ! Application Icon and Splash Screen is Designed by me ! '
                   'We are using OpenCV as backend Engine for Accurate Face recognisation results.',
-              photoPath: '',
+              photoPath: 'images/about/divya.jpg',
             ),
             Divider(),
-            Expanded(
-              child: Center(
-                child: Text(
-                    '©copyright GTU Final Year Project® 2020',
-                style: TextStyle(fontStyle: FontStyle.italic),
-                ),
+            Center(
+              child: Text(
+                  '©copyright GTU Final Year Project® 2020',
+              style: TextStyle(fontStyle: FontStyle.italic),
               ),
             )
           ],
-        )
+        ),
       ),
     );
   }
