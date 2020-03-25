@@ -9,9 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added.">
-      <change beforePath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/manage_students/student_details.dart" afterDir="false" />
-    </list>
+    <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +19,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29_v10" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="prt8kngm69byqws8" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -58,17 +56,17 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/carousel" />
+      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/drawer/take_attendance" />
       <recent name="$PROJECT_DIR$/lib/drawer/manage_students" />
       <recent name="$PROJECT_DIR$/lib/drawer" />
       <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/lib/routes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images/carousel" />
-      <recent name="$PROJECT_DIR$/android/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
