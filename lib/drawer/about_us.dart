@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class AboutPage extends StatelessWidget {
   static final String id = 'AboutPageID';
   @override
