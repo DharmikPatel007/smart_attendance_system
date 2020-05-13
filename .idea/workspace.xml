@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ba19b96-64af-4892-a7c3-2de8943b9ac3" name="Default Changelist" comment="Student Details Page is Now Added.">
-      <change afterPath="$PROJECT_DIR$/images/about/divya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/drawer/about_us.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/about_us.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/attendance_result.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/drawer/take_attendance/take_attendance.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/drawer/take_attendance/take_attendance.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/util.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +33,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29_v10" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="prt8kngm69byqws8" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -35,6 +43,19 @@
   </component>
   <component name="FlutterView" splitter-proportion="0.9123103" />
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Dharmik Patel &lt;dharmikpatel007.dp@gmail.com&gt;" />
@@ -53,8 +74,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/about" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/app/outputs/apk/release/app-release.apk" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -229,81 +250,5 @@
     <MESSAGE value="Manage Students is Added !" />
     <MESSAGE value="Student Details Page is Now Added." />
     <option name="LAST_COMMIT_MESSAGE" value="Student Details Page is Now Added." />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Android</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>smart_attendance_system_android</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Dart Packages</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

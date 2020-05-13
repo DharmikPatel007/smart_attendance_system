@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-  showAlertDialog({BuildContext context, @required String text}) {
+    showAlertDialog({BuildContext context, @required String text}) {
     setState(() {
       isLoading = false;
     });

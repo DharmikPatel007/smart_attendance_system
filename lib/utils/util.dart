@@ -17,7 +17,32 @@ class Util {
   final String _getStudentsUrl = 'http://jatinparate.pythonanywhere.com/api/getStudentsList/';
   final String _getAvgAttUrl = 'http://jatinparate.pythonanywhere.com/api/get_average_attendance/';
   final String _sendEmailUrl = 'http://jatinparate.pythonanywhere.com/api/sendEmail/';
+  final String _makeAttendanceUrl = 'http://jatinparate.pythonanywhere.com/api/make_attendance/';
 
+  Future<String> makeAttendance(String branch, String klass, String sem, String lec, List students) async{
+    if(await isConnected()){
+      try{
+        var body = json.encode({
+          "class" : branch,
+          "division" : klass,
+          "sem" : sem,
+          "lacture_no" : lec,
+          "students" : students
+        });
+        var response = await http.post(_makeAttendanceUrl, body: body, headers: {'Content-type': 'application/json'});
+        var data = jsonDecode(response.body);
+        if(data['is_successful']){
+          return 'true';
+        }else{
+          return 'false';
+        }
+      }catch(e){
+        return 'error';
+      }
+    }else{
+      return 'noConnection';
+    }
+  }
   Future<String> sendEmail(String enroll,String branch,String classStr,int total,int present) async {
     if(await isConnected()){
       try{
@@ -35,7 +60,6 @@ class Util {
           return 'false';
         }
       }catch(e){
-        print(e);
         return 'error';
       }
     }else{

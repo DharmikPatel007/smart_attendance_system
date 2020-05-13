@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
             Divider(),
             ListTile(
               title: Text('Manage Students'),
-              trailing: Icon(CupertinoIcons.gear_solid),
+              trailing: Icon(CupertinoIcons.group_solid),
               onTap: (){
                 Navigator.of(context).pushNamed(ManageStudentsPage.id);
                 },
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
             Divider(),
             ListTile(
                 title: Text('About US'),
-                trailing: Icon(CupertinoIcons.group_solid),
+                trailing: Icon(Icons.format_align_left),
                 onTap: (){
                   Navigator.of(context).pushNamed(AboutPage.id);
                 }
@@ -107,11 +107,13 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Flexible(
               child: CarouselSlider(
-                autoPlay: true,
+                options: CarouselOptions(
+                  autoPlay: true,
+                  enlargeCenterPage: true,
+                  pauseAutoPlayOnTouch: true,
+                  height: MediaQuery.of(context).size.height/2,
+                ),
                 items: imageList,
-                enlargeCenterPage: true,
-                pauseAutoPlayOnTouch: Duration(seconds: 1),
-                height: MediaQuery.of(context).size.height/2,
               ),
             ),
             Row(
@@ -119,17 +121,9 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 ReusableCard(cardLabel: 'Take Attendance',iconData: CupertinoIcons.create_solid,routeName: AttendancePage.id,),
-                ReusableCard(cardLabel: 'Manage Students',iconData: CupertinoIcons.gear_solid,routeName: ManageStudentsPage.id,),
+                ReusableCard(cardLabel: 'Manage Students',iconData: CupertinoIcons.group_solid,routeName: ManageStudentsPage.id,),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                ReusableCard(cardLabel: 'About US',iconData: CupertinoIcons.group_solid,routeName: AboutPage.id,),
-                ReusableCard(cardLabel: 'Sign Out',iconData: CupertinoIcons.reply_thick_solid,onTouch: _signOut,),
-              ],
-            )
           ],
         )
       ),

@@ -13,6 +13,7 @@ import 'attendance_result.dart';
 import '../../utils/face_cropper.dart';
 import '../../utils/util.dart';
 import '../../utils/face_painter.dart';
+import 'package:fab_circular_menu/fab_circular_menu.dart';
 
 class AttendancePage extends StatefulWidget {
   static final String id = 'AttendancePageID';
@@ -21,6 +22,7 @@ class AttendancePage extends StatefulWidget {
 }
 
 class _AttendancePageState extends State<AttendancePage> {
+  final GlobalKey<FabCircularMenuState> fabKey = GlobalKey();
   Util util = Util();
 
   bool progressIndicator = false;
@@ -38,8 +40,11 @@ class _AttendancePageState extends State<AttendancePage> {
   List<String> _sems = ['sem-1', 'sem-2', 'sem-3', 'sem-4', 'sem-5', 'sem-6', 'sem-7', 'sem-8'];
   String _currentSem = 'sem-8';
 
-  _getImageAndDetectFaces() async {
-    final pickedImage = await ImagePicker.pickImage(source: ImageSource.gallery);
+  List<String> _lectures = ['1', '2', '3', '4', '5', '6'];
+  String _currentLec = '5';
+
+  Future<void> _getImageAndDetectFaces(ImageSource source) async {
+    final pickedImage = await ImagePicker.pickImage(source: source);
     final compressedImage = await FlutterImageCompress.compressWithFile(pickedImage.path,quality: 60);
     Directory dir = await getApplicationDocumentsDirectory();
     String path = dir.path;
@@ -47,8 +52,6 @@ class _AttendancePageState extends State<AttendancePage> {
     if (compressedFile != null) {
       setState(() {
         isLoading = true;
-        print('length is : ${compressedFile.lengthSync()}');
-
       });
       final image = FirebaseVisionImage.fromFile(compressedFile);
       final faceDetector = FirebaseVision.instance.faceDetector();
@@ -140,7 +143,7 @@ class _AttendancePageState extends State<AttendancePage> {
         body: isLoading
             ? Center(child: CircularProgressIndicator())
             : (_imageFile == null)
-                ? Center(child: Text('No image selected'))
+                ? Center(child: Text('Select Image from Gallery or Take Photo',style: TextStyle(fontSize: 15)))
                 : Container(
                     child: Column(
                       children: <Widget>[
@@ -168,21 +171,23 @@ class _AttendancePageState extends State<AttendancePage> {
                                   createDropDown(list: _branches, initialItem: _currentBranch, onChanged: (value){
                                     setState(() {
                                       _currentBranch = value;
-                                      print(value);
                                     });
                                   }),
                                   createDropDown(list: _classes, initialItem: _currentClass, onChanged: (value){
                                     setState(() {
                                       _currentClass = value;
-                                      print(value);
                                     });
                                   }),
                                   createDropDown(list: _sems, initialItem: _currentSem, onChanged: (value){
                                     setState(() {
                                       _currentSem = value;
-                                      print(value);
                                     });
                                   }),
+                                  createDropDown(list: _lectures, initialItem: _currentLec, onChanged: (value){
+                                    setState(() {
+                                      _currentLec = value;
+                                    });
+                                  })
                                 ],
                               ),
                               Row(
@@ -204,7 +209,7 @@ class _AttendancePageState extends State<AttendancePage> {
                                       child: Text('Take Attendance'),
                                       onPressed: () {
                                         Navigator.of(context).pushNamed(ResultPage.id,
-                                            arguments: Result(_currentClass,_currentBranch,_currentSem)
+                                            arguments: Result(_currentClass,_currentBranch,_currentSem,_currentLec)
                                         );
                                       },
                                     ),
@@ -217,11 +222,36 @@ class _AttendancePageState extends State<AttendancePage> {
                       ],
                     ),
                   ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _getImageAndDetectFaces,
-          tooltip: 'Pick Image',
-          child: Icon(Icons.add_a_photo),
-        ),
+        floatingActionButton: FabCircularMenu(
+          key: fabKey,
+          ringColor: Colors.black38,
+          animationDuration: Duration(milliseconds: 300),
+          children: <Widget>[
+            IconButton(
+              icon:Icon(Icons.camera_alt,semanticLabel: 'Camera',),
+              onPressed: (){
+                _getImageAndDetectFaces(ImageSource.camera);
+                if(fabKey.currentState.isOpen){
+                  fabKey.currentState.close();
+                }
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.image),
+              onPressed: (){
+                _getImageAndDetectFaces(ImageSource.gallery);
+                if(fabKey.currentState.isOpen){
+                  fabKey.currentState.close();
+                }
+              }
+            )
+          ],
+        )
+//        FloatingActionButton(
+//          onPressed: _getImageAndDetectFaces,
+//          tooltip: 'Pick Image',
+//          child: Icon(Icons.add_a_photo),
+//        ),
       ),
     );
   }
