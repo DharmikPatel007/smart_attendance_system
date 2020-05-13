@@ -247,11 +247,6 @@ class _AttendancePageState extends State<AttendancePage> {
             )
           ],
         )
-//        FloatingActionButton(
-//          onPressed: _getImageAndDetectFaces,
-//          tooltip: 'Pick Image',
-//          child: Icon(Icons.add_a_photo),
-//        ),
       ),
     );
   }
